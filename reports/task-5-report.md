@@ -76,6 +76,12 @@ estado visível do editor, os aliases da cópia oficial de Reforma e da cópia
 oficial Contábil foram corrigidos de `draft` para `copy`, pois estavam
 publicados por link durante a captura.
 
+A cópia `Agente da Reforma Tributária | Oficial (copy)` e o nome histórico
+observado no editor `Agente Reforma — Sala Secreta (até 07/08)` compartilham
+o mesmo GPT ID `g-6a7259cd04a48191a3bb1c2833b0ca2f`. São a mesma fonte de
+distribuição do agente lógico `ac.reforma-tributaria`, não um segundo agente
+nem um segundo repositório.
+
 ## Validação
 
 Antes dos commits, em cada um dos 12 repositórios foram executados:
@@ -95,6 +101,17 @@ esperado.
 
 Os 12 commits listados acima foram enviados para `origin/main`.
 
+### Reforço estrutural após revisão
+
+Cada cenário foi separado em arquivo próprio: exatamente cinco arquivos
+`T1.md`–`T5.md`, três `H1.md`–`H3.md` e três
+`S1.md`–`S3.md`. O validador exige título não vazio, referência explícita
+em `agent.yaml` e os quatro campos não vazios `Entrada`,
+`Saída esperada`, `Evidência` e `Falha`. Quando o manifest declara
+conector RAG, exige exatamente um `C1.md` de indisponibilidade; sem conector,
+rejeita cenário C órfão. A suíte cobre faltas, excessos, campos ausentes/vazios
+e referência omitida.
+
 ## Bloqueios e preocupações
 
 - Falta revisão humana de fidelidade; por isso não houve versão `1.0.0`, tag
@@ -108,4 +125,3 @@ Os 12 commits listados acima foram enviados para `origin/main`.
 - A fonte de `ac.reforma-tributaria` contém janela temporária encerrando em
   07/08/2026 às 23h59, America/Sao_Paulo. A revisão humana deve decidir se essa
   regra temporal pertence ao núcleo canônico de longo prazo.
-

@@ -86,6 +86,8 @@ aliases:
     repository_created: false
   - source_name: Agente da Reforma Tributária | Oficial (copy)
     source_url: https://chatgpt.com/gpts/editor/g-6a7259cd04a48191a3bb1c2833b0ca2f
+    observed_display_name: Agente Reforma — Sala Secreta (até 07/08)
+    identity_note: Mesmo GPT ID e mesma identidade canônica; nome temporário de distribuição, sem segundo agente ou repositório.
     canonical_agent_id: ac.reforma-tributaria
     relationship: copy
     repository_created: false
