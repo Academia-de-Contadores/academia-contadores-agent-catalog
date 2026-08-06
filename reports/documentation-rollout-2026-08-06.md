@@ -37,7 +37,34 @@ git diff --check
 
 O teste imprimiu `unknown canonical_agent_id: ac.missing`: este é o caso negativo esperado, e os três comandos terminaram com exit code `0`.
 
-A API do GitHub confirmou `private: true` e `default_branch: main` para o template, catálogo e os 12 agentes. `git ls-remote` confirmou que cada SHA da tabela é o de `refs/heads/main`; as worktrees auditadas estavam limpas e com `HEAD == origin/main`. O catálogo estava sincronizado no commit `e77407c730f455ab4d293e66a62ab47a407d9fb8` no instante da auditoria. Este relatório é um novo commit local deliberadamente não enviado; até a publicação dele, somente o catálogo ficará um commit à frente de `origin/main`.
+A API do GitHub confirmou `private: true` e `default_branch: main` para o template, catálogo e os 12 agentes. A auditoria pós-publicação confirmou worktrees limpas e igualdade entre `HEAD` e `origin/main` nos 14 repositórios. O catálogo passou a incluir este relatório em `main` após o push dos commits `3459ba7c9581efaf11783d643b4d4541c90a042a` e deste ajuste.
+
+Para repetir a auditoria em clones limpos, execute o bloco abaixo para o template, catálogo e os 12 agentes. Ele falha se qualquer worktree tiver alteração, se o `HEAD` local divergir de `origin/main`, ou se a API não retornar um repositório privado.
+
+```bash
+repos=(
+  academia-contadores-agent-template academia-contadores-agent-catalog
+  ac-agente-processos-escritorio ac-agente-fiscal ac-agente-dp
+  ac-agente-societario ac-agente-estrategista-conteudo-dai
+  ac-agente-reforma-tributaria ac-agente-contabil ac-agente-entrada-clientes
+  ac-agente-captacao-clientes ac-agente-guia-operacao
+  ac-agente-reforma-tributaria-rag ac-agente-reforma-tributaria-sem-surto
+)
+audit_dir=$(mktemp -d)
+for repo in "${repos[@]}"; do
+  git clone --quiet "https://github.com/Academia-de-Contadores/${repo}.git" "$audit_dir/$repo"
+  (
+    cd "$audit_dir/$repo"
+    test -z "$(git status --porcelain)"
+    local_head=$(git rev-parse HEAD)
+    remote_head=$(git ls-remote origin refs/heads/main | awk '{print $1}')
+    test "$local_head" = "$remote_head"
+  )
+  test "$(gh api "repos/Academia-de-Contadores/$repo" --jq .private)" = true
+done
+```
+
+Resultado registrado: os 14 comandos `git status --porcelain` não produziram saída; as 14 comparações de SHA foram iguais; e as 14 consultas retornaram `true`.
 
 ## Critérios de aceite
 
@@ -53,9 +80,8 @@ A API do GitHub confirmou `private: true` e `default_branch: main` para o templa
 
 ## Revisão humana final solicitada
 
-Antes de declarar este padrão aprovado para uso organizacional, revisar o relatório e, no template, o [README](https://github.com/Academia-de-Contadores/academia-contadores-agent-template/blob/main/README.md), o [HOW-TO-USE](https://github.com/Academia-de-Contadores/academia-contadores-agent-template/blob/main/HOW-TO-USE.md) e a [referência estrutural](https://github.com/Academia-de-Contadores/academia-contadores-agent-template/blob/main/docs/REPOSITORY-STRUCTURE.md). Os links exigem acesso à organização, pois todos os repositórios permanecem privados.
+Antes de declarar este padrão aprovado para uso organizacional, revisar o [relatório central](https://github.com/Academia-de-Contadores/academia-contadores-agent-catalog/blob/main/reports/documentation-rollout-2026-08-06.md) e, no template, o [README](https://github.com/Academia-de-Contadores/academia-contadores-agent-template/blob/main/README.md), o [HOW-TO-USE](https://github.com/Academia-de-Contadores/academia-contadores-agent-template/blob/main/HOW-TO-USE.md) e a [referência estrutural](https://github.com/Academia-de-Contadores/academia-contadores-agent-template/blob/main/docs/REPOSITORY-STRUCTURE.md). Os links exigem acesso à organização, pois todos os repositórios permanecem privados.
 
 ## Privacidade
 
-O rollout não adiciona segredos, dados de clientes, conversas, logs, corpus, índices RAG nem credenciais. A auditoria confirma que todos os repositórios consultados continuam privados; a revisão humana deve preservar essa condição ao publicar o commit pendente do catálogo.
-
+O rollout não adiciona segredos, dados de clientes, conversas, logs, corpus, índices RAG nem credenciais. A auditoria confirma que todos os repositórios consultados continuam privados; a revisão humana deve preservar essa condição em alterações futuras.
