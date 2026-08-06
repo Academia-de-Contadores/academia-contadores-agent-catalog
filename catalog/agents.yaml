@@ -1,73 +1,73 @@
 agents:
   - id: ac.processos-escritorio
     repository: ac-agente-processos-escritorio
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical]
   - id: ac.fiscal
     repository: ac-agente-fiscal
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical, public-safe]
   - id: ac.dp
     repository: ac-agente-dp
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical, public-safe]
   - id: ac.societario
     repository: ac-agente-societario
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical, public-safe]
   - id: ac.estrategista-conteudo-dai
     repository: ac-agente-estrategista-conteudo-dai
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical]
   - id: ac.reforma-tributaria
     repository: ac-agente-reforma-tributaria
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical]
   - id: ac.contabil
     repository: ac-agente-contabil
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical, public-safe]
   - id: ac.entrada-clientes
     repository: ac-agente-entrada-clientes
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical]
   - id: ac.captacao-clientes
     repository: ac-agente-captacao-clientes
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical]
   - id: ac.guia-operacao
     repository: ac-agente-guia-operacao
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical]
   - id: ac.reforma-tributaria-rag
     repository: ac-agente-reforma-tributaria-rag
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical]
   - id: ac.reforma-tributaria-sem-surto
     repository: ac-agente-reforma-tributaria-sem-surto
-    lifecycle: migration
+    lifecycle: source-capture
     owner: Academia-de-Contadores
     production_version: null
     profiles: [canonical]
