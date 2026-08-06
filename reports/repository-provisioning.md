@@ -14,18 +14,18 @@ estavam ausentes e, portanto, não houve conflito de `agent.id` nem sobrescrita.
 
 | ID | Nome canônico | Repositório | Privado | ID remoto | Validação | Commit publicado |
 | --- | --- | --- | --- | --- | --- | --- |
-| `ac.processos-escritorio` | Processos do Escritório Autogerenciável | `ac-agente-processos-escritorio` | sim | `R_kgDOTwOM8w` | passou | `49deb5d188e8aff68681954c6925999e98eba153` |
-| `ac.fiscal` | Agente Fiscal Oficial | `ac-agente-fiscal` | sim | `R_kgDOTwONUQ` | passou | `92e6f04cb3ff9e6b1caa1542afd31ce8c2f4ee94` |
-| `ac.dp` | Agente DP Oficial | `ac-agente-dp` | sim | `R_kgDOTwONuw` | passou | `f3af65260ea09873f2b940c3e0dd762627774d75` |
-| `ac.societario` | Agente Societário Oficial | `ac-agente-societario` | sim | `R_kgDOTwOOBw` | passou | `8b0c38cc986d88c3db7e12bfdcc8b33a38cf0085` |
-| `ac.estrategista-conteudo-dai` | Estrategista de Conteúdo D.A.I. Oficial | `ac-agente-estrategista-conteudo-dai` | sim | `R_kgDOTwOOUQ` | passou | `44c9a9170a3a9fa02f5d2c71832aa488b0f441ee` |
-| `ac.reforma-tributaria` | Agente da Reforma Tributária Oficial | `ac-agente-reforma-tributaria` | sim | `R_kgDOTwOOpQ` | passou | `39c70682011547431600867c380f1df7d78dfbb4` |
-| `ac.contabil` | Agente Contábil Oficial | `ac-agente-contabil` | sim | `R_kgDOTwOO8w` | passou | `85a1aca5f7349f38660e1610a132bf2719dc6217` |
-| `ac.entrada-clientes` | Agente de Entrada de Clientes CEO | `ac-agente-entrada-clientes` | sim | `R_kgDOTwOPTg` | passou | `69855038fff8d811a09d1f15ab5ecec774c06c63` |
-| `ac.captacao-clientes` | Agente de Captação de Clientes CEO | `ac-agente-captacao-clientes` | sim | `R_kgDOTwOPlg` | passou | `bf7c59820c31153a7360050f6cff4205d95a3c5a` |
-| `ac.guia-operacao` | Agente Guia da Operação CEO | `ac-agente-guia-operacao` | sim | `R_kgDOTwOP4Q` | passou | `c496c8fa1199d4713bcd154f44f0c806dfd5d964` |
-| `ac.reforma-tributaria-rag` | Reforma Tributária Day — Consulta RAG | `ac-agente-reforma-tributaria-rag` | sim | `R_kgDOTwOQNA` | passou | `5aff31e57bcc554e1df2613f0d2f7da833677e95` |
-| `ac.reforma-tributaria-sem-surto` | Day Agente da Reforma Tributária Sem Surto | `ac-agente-reforma-tributaria-sem-surto` | sim | `R_kgDOTwOQkg` | passou | `8056b4c261d45e4a6eece57bf3925860d051292a` |
+| `ac.processos-escritorio` | Processos do Escritório Autogerenciável | `ac-agente-processos-escritorio` | sim | `R_kgDOTwOM8w` | passou | `e4025b1535b0bb8d4a040d9e430a1e969fe3cc9f` |
+| `ac.fiscal` | Agente Fiscal Oficial | `ac-agente-fiscal` | sim | `R_kgDOTwONUQ` | passou | `9e9711db9544e4999fbe35e5ac291823eb9884e3` |
+| `ac.dp` | Agente DP Oficial | `ac-agente-dp` | sim | `R_kgDOTwONuw` | passou | `7d5ee9f81606ced5a8bff79730edd01b5fa6d278` |
+| `ac.societario` | Agente Societário Oficial | `ac-agente-societario` | sim | `R_kgDOTwOOBw` | passou | `ac50cf276c3e0f96a5c0613ecb20e1a13c44992d` |
+| `ac.estrategista-conteudo-dai` | Estrategista de Conteúdo D.A.I. Oficial | `ac-agente-estrategista-conteudo-dai` | sim | `R_kgDOTwOOUQ` | passou | `eba1ac1e88d7ce85ac94d56061399a863a355b0d` |
+| `ac.reforma-tributaria` | Agente da Reforma Tributária Oficial | `ac-agente-reforma-tributaria` | sim | `R_kgDOTwOOpQ` | passou | `9c1e6face47aae7c3510e5dd9e07e28706804cb2` |
+| `ac.contabil` | Agente Contábil Oficial | `ac-agente-contabil` | sim | `R_kgDOTwOO8w` | passou | `4c0a5d1077cbb9ddbd1ab0d89db935721df39284` |
+| `ac.entrada-clientes` | Agente de Entrada de Clientes CEO | `ac-agente-entrada-clientes` | sim | `R_kgDOTwOPTg` | passou | `53317fe70b7925bfd0d9269374a7c61cee80cd2b` |
+| `ac.captacao-clientes` | Agente de Captação de Clientes CEO | `ac-agente-captacao-clientes` | sim | `R_kgDOTwOPlg` | passou | `0a06f8290930f85b2f7f014037dd508341c35b51` |
+| `ac.guia-operacao` | Agente Guia da Operação CEO | `ac-agente-guia-operacao` | sim | `R_kgDOTwOP4Q` | passou | `c9181d801361540762c83184d0fea2cd6bdb3646` |
+| `ac.reforma-tributaria-rag` | Reforma Tributária Day — Consulta RAG | `ac-agente-reforma-tributaria-rag` | sim | `R_kgDOTwOQNA` | passou | `8381c1b8d8281b6a016a5c29df467a71e4549d01` |
+| `ac.reforma-tributaria-sem-surto` | Day Agente da Reforma Tributária Sem Surto | `ac-agente-reforma-tributaria-sem-surto` | sim | `R_kgDOTwOQkg` | passou | `b6a4a29db43c6d10ab081556021032015e3356a9` |
 
 ## Conteúdo mínimo canônico
 
@@ -52,7 +52,7 @@ externo não foi alterado.
 
 ## Validações
 
-- `bash scripts/validate-agent-repo.sh` passou em cada um dos 12 clones.
+- A suíte `bash tests/validate-agent-repo.test.sh && bash scripts/validate-agent-repo.sh` passou em cada um dos 12 clones após a correção dos fixtures neutros; cada HEAD local foi confirmado igual a `origin/main`.
 - As checagens de metadados confirmaram versão, lifecycle, owner e URL do
   catálogo em todos os manifests.
 - Os quatro perfis foram confirmados na versão `0.1.0`, com três restrições e
@@ -68,4 +68,3 @@ externo não foi alterado.
 Nenhum conflito ou falha de criação/validação. A captura de instruções e as
 avaliações comportamentais permanecem intencionalmente fora deste
 provisionamento.
-
