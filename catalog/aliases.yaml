@@ -1,0 +1,176 @@
+aliases:
+  - source_name: Guia da Operação — Contadora CEO
+    source_url: https://chatgpt.com/g/g-6a57cfc922508191947383b22f27f45d-guia-da-operacao-contadora-ceo
+    canonical_agent_id: ac.guia-operacao
+    relationship: superseded
+    repository_created: false
+  - source_name: Agente temporário de Captação de Clientes
+    source_url: https://chatgpt.com/g/g-6a577d47c95c81919878d21d78a7480a-agente-temporario-de-captacao-de-clientes
+    canonical_agent_id: ac.captacao-clientes
+    relationship: temporary
+    repository_created: false
+  - source_name: Agente Temporário — Entrada de Clientes
+    source_url: https://chatgpt.com/g/g-6a577ccd4a448191a3dc043d0a408841-agente-temporario-entrada-de-clientes
+    canonical_agent_id: ac.entrada-clientes
+    relationship: temporary
+    repository_created: false
+  - source_name: Agente Temporário Contábil - Desafio Contadora CEO
+    source_url: https://chatgpt.com/g/g-6a4c214614f081919e98a57094af3b2c-agente-temporario-contabil-desafio-contadora-ceo
+    canonical_agent_id: ac.contabil
+    relationship: temporary
+    repository_created: false
+  - source_name: Agente Temporário da Reforma Tributária
+    source_url: https://chatgpt.com/g/g-6a401b3ed7248191b2c235496cf73977-agente-temporario-da-reforma-tributaria
+    canonical_agent_id: ac.reforma-tributaria
+    relationship: temporary
+    repository_created: false
+  - source_name: Agente Temporário Estrategista de Conteúdo D.A.I.
+    source_url: https://chatgpt.com/g/g-6a40182dc1f481918eba4633679ba57f-agente-temporario-estrategista-de-conteudo-d-a-i
+    canonical_agent_id: ac.estrategista-conteudo-dai
+    relationship: temporary
+    repository_created: false
+  - source_name: Agente Temporário do Societário
+    source_url: https://chatgpt.com/g/g-6a40167945dc8191a93c2a30ed3d67f3-agente-temporario-do-societario
+    canonical_agent_id: ac.societario
+    relationship: temporary
+    repository_created: false
+  - source_name: Agente Temporário Fiscal - Desafio Contadora CEO
+    source_url: https://chatgpt.com/g/g-6a4014a0f29481919c9b6bbe1d7d4562-agente-temporario-fiscal-desafio-contadora-ceo
+    canonical_agent_id: ac.fiscal
+    relationship: temporary
+    repository_created: false
+  - source_name: Agente Temporário DP - Desafio Contadora CEO IA
+    source_url: https://chatgpt.com/g/g-6a40121738908191b2f4d5fc3ae7e253-agente-temporario-dp-desafio-contadora-ceo-ia
+    canonical_agent_id: ac.dp
+    relationship: temporary
+    repository_created: false
+  - source_name: Agente temporário de Captação de Clientes (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a6120c0d528819188a12c3ad2408293
+    canonical_agent_id: ac.captacao-clientes
+    relationship: copy
+    repository_created: false
+  - source_name: Day Agente da Reforma Tributária Sem Surto (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a725a3feec081919ba9131c9f475341
+    canonical_agent_id: ac.reforma-tributaria-sem-surto
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Reforma Tributária Day - Consulta RAG (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259edf2688191b44cec56ff3b7221
+    canonical_agent_id: ac.reforma-tributaria-rag
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Temporário DP - Desafio Contadora CEO IA (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259e8a5b08191bab86b902824fe3f
+    canonical_agent_id: ac.dp
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Temporário Fiscal - Desafio Contadora CEO (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259e245e8819185b87b90e7ce4f62
+    canonical_agent_id: ac.fiscal
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Temporário do Societário (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259ddc47c819180ca2a72658259ad
+    canonical_agent_id: ac.societario
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Temporário Estrategista de Conteúdo D.A.I. (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259d924d881919ce71e3d285b6fb8
+    canonical_agent_id: ac.estrategista-conteudo-dai
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Temporário da Reforma Tributária (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259d4ba30819192a6063f9f4377f8
+    canonical_agent_id: ac.reforma-tributaria
+    relationship: draft
+    repository_created: false
+  - source_name: Agente da Reforma Tributária | Oficial (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259cd04a48191a3bb1c2833b0ca2f
+    canonical_agent_id: ac.reforma-tributaria
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Estrategista de Conteúdo D.A.I. | Oficial (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259c849d4819194844f4d99c1213d
+    canonical_agent_id: ac.estrategista-conteudo-dai
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Temporário Contábil - Desafio Contadora CEO (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259b3e2cc8191adf747f90f27d1cb
+    canonical_agent_id: ac.contabil
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Temporário — Entrada de Clientes (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259af338c81919ab1dd42e47fa4c7
+    canonical_agent_id: ac.entrada-clientes
+    relationship: draft
+    repository_created: false
+  - source_name: Agente temporário de Captação de Clientes (copy) — nova
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259aaa728819189410514dd9fced6
+    canonical_agent_id: ac.captacao-clientes
+    relationship: draft
+    repository_created: false
+  - source_name: Guia da Operação — Contadora CEO (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259a670ec819182a5698fe63ef6ca
+    canonical_agent_id: ac.guia-operacao
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Guia da Operação CEO | Oficial (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a7259a1ec9c81918486ffda9824af6e
+    canonical_agent_id: ac.guia-operacao
+    relationship: draft
+    repository_created: false
+  - source_name: Agente de Captação de Clientes CEO | Oficial (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a72599d1e28819181c68d513fc6cc09
+    canonical_agent_id: ac.captacao-clientes
+    relationship: draft
+    repository_created: false
+  - source_name: Agente de Entrada de Clientes CEO | Oficial (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a725998eaac81919fc16fc528de36ef
+    canonical_agent_id: ac.entrada-clientes
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Contábil — Contadora CEO | Oficial (copy)
+    source_url: https://chatgpt.com/g/g-6a725977a3648191af38146c635b4c86-agente-contabil-contadora-ceo-oficial-copy
+    canonical_agent_id: ac.contabil
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Societário — Contadora CEO | Oficial (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a725963258081919e7c1824531b1b6d
+    canonical_agent_id: ac.societario
+    relationship: draft
+    repository_created: false
+  - source_name: Agente Fiscal — Contadora CEO | Oficial (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a72595c828c8191aec02f7931d9c626
+    canonical_agent_id: ac.fiscal
+    relationship: draft
+    repository_created: false
+  - source_name: Agente de Processos do Escritório Autogerenciável (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a725900102c8191bdcb028b9ab4f21a
+    canonical_agent_id: ac.processos-escritorio
+    relationship: draft
+    repository_created: false
+  - source_name: Agente DP — Contadora CEO | Oficial (copy)
+    source_url: https://chatgpt.com/gpts/editor/g-6a725829fc9c8191a652858f5980d4f4
+    canonical_agent_id: ac.dp
+    relationship: draft
+    repository_created: false
+  - source_name: Guia de Rotinas de DP — Contadora CEO
+    source_url: https://chatgpt.com/g/g-6a7273eda68481918181a4bdfec26bc1-guia-de-rotinas-de-dp-contadora-ceo
+    canonical_agent_id: ac.dp
+    relationship: superseded
+    repository_created: false
+  - source_name: Guia de Rotinas Fiscais — Contadora CEO
+    source_url: https://chatgpt.com/g/g-6a7278af95d881918c01bd35cfa6234b-guia-de-rotinas-fiscais-contadora-ceo
+    canonical_agent_id: ac.fiscal
+    relationship: superseded
+    repository_created: false
+  - source_name: Guia de Rotinas Societárias — Contadora CEO
+    source_url: https://chatgpt.com/g/g-6a727912797c819198b0120d8ee11630-guia-de-rotinas-societarias-contadora-ceo
+    canonical_agent_id: ac.societario
+    relationship: superseded
+    repository_created: false
+  - source_name: Guia de Fechamento Contábil — Contadora CEO
+    source_url: https://chatgpt.com/g/g-6a727954496c8191bdb408efc80c5110-guia-de-fechamento-contabil-contadora-ceo
+    canonical_agent_id: ac.contabil
+    relationship: superseded
+    repository_created: false
