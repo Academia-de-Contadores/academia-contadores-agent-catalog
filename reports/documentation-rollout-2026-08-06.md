@@ -3,9 +3,7 @@
 ## Resultado da correção final
 
 O template e os 12 agentes receberam a correção final do contrato documental.
-Os SHAs abaixo são **commits locais** desta onda: nenhum push foi executado. A
-publicação e a conferência posterior de `origin/main` ficam a cargo do
-controlador.
+Os SHAs abaixo foram publicados em `origin/main` e conferidos após o push.
 
 Os quatro documentos obrigatórios continuam sendo `README.md`,
 `HOW-TO-USE.md`, `docs/REPOSITORY-STRUCTURE.md` e
@@ -13,7 +11,7 @@ Os quatro documentos obrigatórios continuam sendo `README.md`,
 existente, traz metadados e propósito específicos e explica somente proteções
 comprováveis pelos arquivos versionados.
 
-| Repositório | URL | Base | HEAD local | Teste + validador + `diff --check` |
+| Repositório | URL | Base | Commit publicado | Teste + validador + `diff --check` |
 | --- | --- | --- | --- | --- |
 | Template | [academia-contadores-agent-template](https://github.com/Academia-de-Contadores/academia-contadores-agent-template) | `5bd77dc90ef092ca8c6e3dabd36a23b6283f4b21` | `340b742b9f38f3bfebcd86437ba37445e259d173` | PASS |
 | Captação de clientes | [ac-agente-captacao-clientes](https://github.com/Academia-de-Contadores/ac-agente-captacao-clientes) | `e3d524859f9ad10bf7bb053eee81c5ee0706c7e2` | `74140513a05a8d82e6b81f18b14953dc0f69c312` | PASS |
@@ -65,7 +63,7 @@ ao seu fixture de exemplo.
 
 ## Validação do catálogo
 
-Após atualizar este relatório, executar:
+Também foi executado no catálogo:
 
 ```bash
 bash tests/validate-catalog.test.sh
@@ -75,8 +73,16 @@ git diff --check
 
 `unknown canonical_agent_id: ac.missing` é a saída negativa esperada da suíte.
 
-## Publicação pendente
+## Auditoria pós-publicação
 
-Esta onda não altera nenhum remoto. Depois de publicar os 14 commits locais, o
-controlador deve conferir os novos `origin/main`, visibilidade, regras de branch
-e demais proteções remotas antes de registrar uma auditoria pós-publicação.
+Depois do push, a auditoria confirmou:
+
+- **14/14** worktrees limpas;
+- **14/14** repositórios com `HEAD == origin/main`;
+- **14/14** repositórios privados no GitHub;
+- **13/13** repositórios do rollout contendo os quatro documentos obrigatórios;
+- referência estrutural idêntica nos 13 repositórios, SHA-256
+  `00bb021d66fefcc8cdc7bd3657a93c2870db7c3ff563cf07302b698a4170bdda`.
+
+O total de 14 inclui template, catálogo e 12 agentes. O total de 13 do rollout
+inclui template e 12 agentes; o catálogo apenas indexa e registra as evidências.
