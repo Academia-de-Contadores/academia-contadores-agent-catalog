@@ -14,6 +14,8 @@ bash scripts/validate-catalog.sh
 
 O repositório remoto é privado. No plano atual da organização, a API do GitHub
 não disponibiliza rulesets para este repositório privado (HTTP 403) nem secret
-scanning/push protection (HTTP 422). A validação local do catálogo permanece
-obrigatória antes de cada publicação. Consulte `reports/task-3-report.md` para
-a evidência e os limites exatos.
+scanning/push protection (HTTP 422). Rulesets e branch protection não estão
+disponíveis para repositórios privados no plano atual; portanto, `main`
+permanece sem proteção e não há gate de merge remoto. A validação local do
+catálogo é o controle preventivo ativo antes de cada publicação. Consulte
+`reports/task-3-report.md` para a evidência e os limites exatos.

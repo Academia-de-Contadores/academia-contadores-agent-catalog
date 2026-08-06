@@ -46,15 +46,18 @@ A consulta à API de rulesets retornou HTTP 403:
 
 > Upgrade to GitHub Pro or make this repository public to enable this feature.
 
-Por isso não foi possível criar um ruleset para `main`. O repositório não foi
-tornado público e a limitação não foi contornada.
+Por isso não foi possível criar um ruleset para `main`. Branch protection
+também não está disponível para este repositório privado no plano atual.
+Portanto, `main` permanece sem proteção e não há gate de merge remoto. O
+repositório não foi tornado público e a limitação não foi contornada.
 
 A tentativa de ativar `secret_scanning` e
 `secret_scanning_push_protection` retornou HTTP 422:
 
 > Secret scanning is not available for this repository.
 
-A validação local de `scripts/validate-catalog.sh` continua obrigatória. O
-catálogo contém somente metadados canônicos e aliases; segredos, conversas,
-dados de clientes, logs e artefatos operacionais continuam proibidos pela
-política documentada do projeto.
+A validação local de `scripts/validate-catalog.sh` é o controle preventivo
+ativo antes da publicação; não há workflow ou configuração remota que bloqueie
+merge ou push direto para `main`. O catálogo contém somente metadados
+canônicos e aliases; segredos, conversas, dados de clientes, logs e artefatos
+operacionais continuam proibidos pela política documentada do projeto.
