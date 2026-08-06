@@ -24,3 +24,9 @@ Catalog implementation: `421f16739a7f2db71997f3a49c242d52580bb945` (`feat: add c
 ## Concerns
 
 Alias-to-canonical mappings are based on the source names and URLs in `catalogo-gpts.md`; behavioral fidelity is intentionally deferred to the source-capture task.
+
+## Integration validation — 2026-08-06
+
+- `bash tests/validate-catalog.test.sh` passed, including execution from the repository parent and rejection of empty alias fields, invalid relationships, non-false `repository_created`, and an unknown canonical ID.
+- `bash scripts/validate-catalog.sh` passed from the catalog root.
+- `bash academia-contadores-agent-catalog/scripts/validate-catalog.sh` passed from the parent workspace.
