@@ -87,7 +87,7 @@ aliases:
   - source_name: Agente da Reforma Tributária | Oficial (copy)
     source_url: https://chatgpt.com/gpts/editor/g-6a7259cd04a48191a3bb1c2833b0ca2f
     canonical_agent_id: ac.reforma-tributaria
-    relationship: draft
+    relationship: copy
     repository_created: false
   - source_name: Agente Estrategista de Conteúdo D.A.I. | Oficial (copy)
     source_url: https://chatgpt.com/gpts/editor/g-6a7259c849d4819194844f4d99c1213d
@@ -132,7 +132,7 @@ aliases:
   - source_name: Agente Contábil — Contadora CEO | Oficial (copy)
     source_url: https://chatgpt.com/g/g-6a725977a3648191af38146c635b4c86-agente-contabil-contadora-ceo-oficial-copy
     canonical_agent_id: ac.contabil
-    relationship: draft
+    relationship: copy
     repository_created: false
   - source_name: Agente Societário — Contadora CEO | Oficial (copy)
     source_url: https://chatgpt.com/gpts/editor/g-6a725963258081919e7c1824531b1b6d
