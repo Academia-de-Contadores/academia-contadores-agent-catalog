@@ -1,5 +1,12 @@
 # Auditoria do GPT Builder ao vivo — 2026-08-22
 
+> **Atualização de escopo:** esta auditoria inicial identificou o GPT público
+> `g-6a6ea5f0985c8191971aa805e5ad759f` de Processos sem anexos. A verificação
+> integral posterior em `reports/live-parity-2026-08-22.md` confirmou que o
+> editor canônico do catálogo é o rascunho
+> `g-6a725900102c8191bdcb028b9ab4f21a`, que possui quatro anexos idênticos ao
+> Git. Os dois IDs devem ser tratados como variantes distintas.
+
 ## Método e limite
 
 O editor autenticado do ChatGPT foi a fonte de verdade. Foram comparados os

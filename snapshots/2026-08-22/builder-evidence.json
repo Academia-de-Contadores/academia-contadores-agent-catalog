@@ -1,0 +1,1265 @@
+{
+  "schema_version": 1,
+  "captured_at": "2026-08-22",
+  "source": "ChatGPT Builder autenticado",
+  "agents": [
+    {
+      "agent_id": "ac.captacao-clientes",
+      "repository": "ac-agente-captacao-clientes",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a72599d1e28819181c68d513fc6cc09",
+      "builder_state": "DRAFT",
+      "name": "Agente de Captação de Clientes CEO | Oficial (copy)",
+      "description": "Copiloto de captação para contadoras: apoia ICP, prospecção, qualificação, reuniões, follow-up, CRM e handoffs com revisão humana.",
+      "conversation_starters": [
+        "Analise meu cenário e monte um plano de captação de clientes.",
+        "Crie uma abordagem de prospecção contextual para este lead.",
+        "Prepare uma reunião consultiva usando SPIN e NEPQ sem pressão.",
+        "Analise este perfil público e gere um briefing seguro para o agente Reforma."
+      ],
+      "capabilities": [
+        true,
+        false,
+        true
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/system.md",
+        "live_sha256": "efb44a4b2475ea34a52961367420731e3004998c7117a6b670321080ce1c1429",
+        "local_sha256": "efb44a4b2475ea34a52961367420731e3004998c7117a6b670321080ce1c1429",
+        "bytes": 4148,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "00-INDICE-COMERCIAL.md",
+          "repository_path": "knowledge/original/00-INDICE-COMERCIAL.md",
+          "bytes": 1670,
+          "sha256": "b935be8dd46fdad851717905856e49cea868525bc1ec0587d13c9b510ba300fb",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "repository_path": "knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md",
+          "bytes": 1848,
+          "sha256": "414ea585dad202c67f77b704f3472f7312d61bfd552d3580a90580aa67e5855d",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-ESCOPO-E-ROTEAMENTO.md",
+          "repository_path": "knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md",
+          "bytes": 1794,
+          "sha256": "5d8ec3b7711c6495017b14e1ae0f00a7288930deb4b9e013d799a88024b45ed3",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-FONTES-CANONICAS.md",
+          "repository_path": "knowledge/live-2026-08-22/03-FONTES-CANONICAS.md",
+          "bytes": 1785,
+          "sha256": "46f2fc389a0bf84a05bdffb2257f1012930af5ac5945ec5c4b7c1be4bde36d50",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "repository_path": "knowledge/live-2026-08-22/04-SKILLS-E-CENARIOS-DE-USO.md",
+          "bytes": 1700,
+          "sha256": "cf49aa270831818b26aef4eeae37b6e78e8008981c14870c8333f423615a615b",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "repository_path": "knowledge/live-2026-08-22/05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "bytes": 1852,
+          "sha256": "7d37684006c543d54f66e67e0389038eb2ca90a7eb11520e0fa15322745b32c5",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "repository_path": "knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "bytes": 1879,
+          "sha256": "381d67f64dabbf09dd9120a6796790543bea098918b06929c85a5ee45c960eee",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "repository_path": "knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "bytes": 1565,
+          "sha256": "d4c87534593c9ed060be32ac8e000aad67f51c7a47220227e770a45be22c6c75",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "08-LACUNAS-E-ROADMAP.md",
+          "repository_path": "knowledge/live-2026-08-22/08-LACUNAS-E-ROADMAP.md",
+          "bytes": 1545,
+          "sha256": "ad2c6520eef75df2398ae3b650e275621b9c7747d23e064ddfdb861d55662e48",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "09-PROSPECCAO-ATIVA-ICP-LISTAS-E-CADENCIAS.md",
+          "repository_path": "knowledge/original/09-PROSPECCAO-ATIVA-ICP-LISTAS-E-CADENCIAS.md",
+          "bytes": 10992,
+          "sha256": "baceac3cd4c016b44c10c8a5d76979e143a67ea715a095b14893e5dd9e4e92a3",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "10-DIAGNOSTICO-REUNIAO-SPIN-NEPQ.md",
+          "repository_path": "knowledge/original/10-DIAGNOSTICO-REUNIAO-SPIN-NEPQ.md",
+          "bytes": 12523,
+          "sha256": "88256af4f7a5a30573bd3e4de3dec91eda1f88c9d78b14c0aebdb78db356e4ef",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "11-CRM-PIPELINE-REVOPS-E-METRICAS.md",
+          "repository_path": "knowledge/original/11-CRM-PIPELINE-REVOPS-E-METRICAS.md",
+          "bytes": 7986,
+          "sha256": "e1280f05da4bc6181ccb60d1fab1a6d5b7571756fd9d762d13d2e4285e483f2d",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "12-HANDOFFS-ENTRE-AGENTES-E-BRIEFINGS.md",
+          "repository_path": "knowledge/original/12-HANDOFFS-ENTRE-AGENTES-E-BRIEFINGS.md",
+          "bytes": 9045,
+          "sha256": "bfb07540e05a186411f914dca244ded16fc6cd1ef2af0e78561a521941e2fd30",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "repository_path": "knowledge/live-2026-08-22/99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "bytes": 1576,
+          "sha256": "01f268e2730f50c548d6ee709b5c44368321b383d2af7c684a62454316010f20",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.contabil",
+      "repository": "ac-agente-contabil",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a725977a3648191af38146c635b4c86",
+      "builder_state": "LIVE",
+      "name": "Agente Contábil — Contadora CEO | Oficial (copy)",
+      "description": "Apoia contadoras e equipes no fechamento mensal, balancete, conciliação, integração Fiscal/DP e preparação de SPED/ECD/ECF com checklist, evidências e revisão humana.",
+      "conversation_starters": [
+        "Monte um checklist de fechamento mensal contábil para este cliente.",
+        "Fiscal e DP dizem que terminaram: o que o Contábil precisa conferir antes do balancete?",
+        "Tenho divergência na conciliação bancária. Quais dados faltam e quais próximos passos?",
+        "ECD e ECF entram todo mês? Explique para leigo e diga o que validar."
+      ],
+      "capabilities": [
+        true,
+        false,
+        true
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/current-live-2026-08-22.md",
+        "live_sha256": "8c58de90991716036daef2f395c8713747616ad9af91a046814adc5a63512a27",
+        "local_sha256": "8c58de90991716036daef2f395c8713747616ad9af91a046814adc5a63512a27",
+        "bytes": 3436,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "00-INDICE-CONTABIL.md",
+          "repository_path": "knowledge/original/00-INDICE-CONTABIL.md",
+          "bytes": 2939,
+          "sha256": "f4264050669ce3f214e83c1433a71ccae294eac0a28bce8adf1912c3d02faa75",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "repository_path": "knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md",
+          "bytes": 1886,
+          "sha256": "81695cda1cc83d8c1779a724775e52c2a6bc10dd1579ae7c48082f94d95bc76d",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-ESCOPO-E-ROTEAMENTO.md",
+          "repository_path": "knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md",
+          "bytes": 3425,
+          "sha256": "acbe13d42b605f473e1644861e1e861f9a41d7eeb53e7e96f3b209fb55e84742",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-FONTES-CANONICAS.md",
+          "repository_path": "knowledge/live-2026-08-22/03-FONTES-CANONICAS.md",
+          "bytes": 4280,
+          "sha256": "6c5bf6caedb208acaf6edb65ca4050a1250f9089e4ebf7cecb00afeeb35dd1b6",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "repository_path": "knowledge/live-2026-08-22/04-SKILLS-E-CENARIOS-DE-USO.md",
+          "bytes": 3361,
+          "sha256": "b8e43334e3bd8b6c88a5b6ed08732888c4557459b6e46f4f6682c46f8cb9636e",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "repository_path": "knowledge/live-2026-08-22/05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "bytes": 3162,
+          "sha256": "3c3632b6afda66bee735e1e8c1751fad0a9fdfb635be93b0bdb4f3053cf4c12f",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "repository_path": "knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "bytes": 2184,
+          "sha256": "e52cc6a609ad912fd41e9ed2bbeef69e0adfe63969db424b4fb640af367e7249",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "repository_path": "knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "bytes": 6236,
+          "sha256": "bb5fc6c89802fd1947c30256464b315a678894cb5857e0f95623fdf15e6d75f4",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "08-LACUNAS-E-ROADMAP.md",
+          "repository_path": "knowledge/live-2026-08-22/08-LACUNAS-E-ROADMAP.md",
+          "bytes": 1814,
+          "sha256": "3b395b910517c0ff3fe3242411899afd7b02e694a7b885991331b96bb6c246cd",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "repository_path": "knowledge/live-2026-08-22/99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "bytes": 1265,
+          "sha256": "2cd8633451badd81f769de88722f691d88203473f9a08663582789760a0a0d8e",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.dp",
+      "repository": "ac-agente-dp",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a725829fc9c8191a652858f5980d4f4",
+      "builder_state": "DRAFT",
+      "name": "Agente DP — Contadora CEO | Oficial (copy)",
+      "description": "Apoia rotinas de Departamento Pessoal com checklists, dados faltantes, evidências, handoffs e revisão humana.",
+      "conversation_starters": [
+        "Preciso de ajuda com o DP"
+      ],
+      "capabilities": [
+        true,
+        false,
+        false
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/system.md",
+        "live_sha256": "ec2256f1e225c31aa722fb6511a9d491408af30379fe09c1f54464774089c0ec",
+        "local_sha256": "ec2256f1e225c31aa722fb6511a9d491408af30379fe09c1f54464774089c0ec",
+        "bytes": 4232,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "00-INDICE-DP.md",
+          "repository_path": "knowledge/original/00-INDICE-DP.md",
+          "bytes": 4528,
+          "sha256": "92956dfce0bd95919588d2f5246b7b494b14c311fdcea1aff67a392c1364b308",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "repository_path": "knowledge/original/01-REGRAS-DE-USO-E-LIMITES.md",
+          "bytes": 4506,
+          "sha256": "53f52cc81668c5b0cdfb9a267ce4c694aa6b04661e9e01cf0f4da8381c0bba79",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-ADMISSAO-E-CADASTRO.md",
+          "repository_path": "knowledge/original/02-ADMISSAO-E-CADASTRO.md",
+          "bytes": 4399,
+          "sha256": "4abe051bae6837351d699f863e9c9fd9796a7aa99ec45120b959362ef59e72f9",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-ESCOPO-E-ROTEAMENTO.md",
+          "repository_path": "knowledge/original/02-ESCOPO-E-ROTEAMENTO.md",
+          "bytes": 3342,
+          "sha256": "50e4f5c43ff8471e27e341ada3c112685c98da3b761d598482655fc217f4a6b7",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-FOLHA-PONTO-BENEFICIOS-E-ROTINA-MENSAL.md",
+          "repository_path": "knowledge/original/03-FOLHA-PONTO-BENEFICIOS-E-ROTINA-MENSAL.md",
+          "bytes": 5512,
+          "sha256": "b6d0f0a55c3761e634b6670409ae763a7ce1385d4fac5bb0238660a00c99c3a0",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-FONTES-CANONICAS.md",
+          "repository_path": "knowledge/original/03-FONTES-CANONICAS.md",
+          "bytes": 2594,
+          "sha256": "02353d1c992659f2cde283ddc3fa72cf9990363dca4b8afbbb5d68fe85d3115a",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-FERIAS-AFASTAMENTOS-E-OCORRENCIAS.md",
+          "repository_path": "knowledge/original/04-FERIAS-AFASTAMENTOS-E-OCORRENCIAS.md",
+          "bytes": 4719,
+          "sha256": "3a82bea1a24e69ebbe8d44037f16b3c34edaec4d48bb3b6eebcf33ef15559945",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "repository_path": "knowledge/original/04-SKILLS-E-CENARIOS-DE-USO.md",
+          "bytes": 2034,
+          "sha256": "6913372aada02f901f9402a09647f60d56005b9f600b972e3be7daafcc1bd3af",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "repository_path": "knowledge/original/05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "bytes": 2064,
+          "sha256": "a2b4cf8964be07b0d88dd6d415a122fb3fbca6bf80fb946947e67be454718fa3",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-RESCISOES.md",
+          "repository_path": "knowledge/original/05-RESCISOES.md",
+          "bytes": 3721,
+          "sha256": "44778b7d2ea54ae72f07e3420832462d7318260e2d797a17ff4a4a18c5ccbdd0",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-ESOCIAL-SST-E-OBRIGACOES.md",
+          "repository_path": "knowledge/original/06-ESOCIAL-SST-E-OBRIGACOES.md",
+          "bytes": 4463,
+          "sha256": "a815516d630ea92da5270d0ce753fc1dfc8e22e5b7c2da293879fb160aaccb0c",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "repository_path": "knowledge/original/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "bytes": 1534,
+          "sha256": "4772eee8f4e4e276560b6434037bebcbe2f4f85ba59f289106635cf8623902c5",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "07-FAQ-E-MODELOS-DE-RESPOSTA.md",
+          "repository_path": "knowledge/original/07-FAQ-E-MODELOS-DE-RESPOSTA.md",
+          "bytes": 4285,
+          "sha256": "05d69982dd33997eaf5bdec9b7a427c012c87b983b7f6dab970f7b6c58948375",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "repository_path": "knowledge/original/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "bytes": 2050,
+          "sha256": "c5b302e56ecb817b59e5351071b3775bb56f2ce3ec7c2034ee156806feb69aa2",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "08-LACUNAS-E-ROADMAP.md",
+          "repository_path": "knowledge/original/08-LACUNAS-E-ROADMAP.md",
+          "bytes": 1431,
+          "sha256": "20931e6c393e3e6e662d1e1526e672dc029e3476fafaf789f68e4097002287ec",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "repository_path": "knowledge/original/99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "bytes": 4115,
+          "sha256": "05374b6ce9247236d4eb62a9c216193b585e6169ec7fe2d94670da8eaf4bc71a",
+          "result": "MATCH",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.entrada-clientes",
+      "repository": "ac-agente-entrada-clientes",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a725998eaac81919fc16fc528de36ef",
+      "builder_state": "DRAFT",
+      "name": "Agente de Entrada de Clientes CEO | Oficial (copy)",
+      "description": "Organiza a entrada de clientes novos e transferências, mapeando documentos, acessos, pendências, riscos e handoffs para cada departamento.",
+      "conversation_starters": [
+        "Quero organizar a entrada de um cliente novo no escritório.",
+        "Meu cliente veio de outra contabilidade. Monte o checklist de transferência.",
+        "Quais documentos e acessos estão faltando para iniciar este cliente?",
+        "Transforme estas pendências em handoffs para Fiscal, DP, Contábil e Societário."
+      ],
+      "capabilities": [
+        true,
+        false,
+        true
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/system.md",
+        "live_sha256": "5a9e25027272f4cdb6b129887fb750ab074ff9ab1ede4fada6a977130d861424",
+        "local_sha256": "5a9e25027272f4cdb6b129887fb750ab074ff9ab1ede4fada6a977130d861424",
+        "bytes": 3920,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "00-INDICE-ONBOARDING.md",
+          "repository_path": "knowledge/original/00-INDICE-ONBOARDING.md",
+          "bytes": 1347,
+          "sha256": "443a7d94eafed5fe61ea8b400bfcd6fd5feb99664f0ac3073bb92473ad725a7a",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "repository_path": "knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md",
+          "bytes": 1269,
+          "sha256": "dd4161f4b5f6ab8d18fd279244c6254a3051458db783d178fcec27ff88eed2c7",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-ESCOPO-E-ROTEAMENTO.md",
+          "repository_path": "knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md",
+          "bytes": 5932,
+          "sha256": "e1a3a7849ab3177048fcae614018b7740c9e8472c0bc81f1c0e32188121905e1",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-FONTES-CANONICAS.md",
+          "repository_path": "knowledge/live-2026-08-22/03-FONTES-CANONICAS.md",
+          "bytes": 1233,
+          "sha256": "9d119b14e87131be1ad5d00d00f30f6674d33798d3b48abc39bf86aadb274658",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "repository_path": "knowledge/live-2026-08-22/04-SKILLS-E-CENARIOS-DE-USO.md",
+          "bytes": 2504,
+          "sha256": "96cc59bc0d74e87c1009883604515c13cbb36ee365513a8623e15352e4e0cd59",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "repository_path": "knowledge/live-2026-08-22/05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "bytes": 1565,
+          "sha256": "4c304b14171c31180604c2d7b0565b156672a8ac9fdd52283486f0e3a79f5655",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "repository_path": "knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "bytes": 1158,
+          "sha256": "399a3e70939c847c52c712e6343297e66b593641a80f654aed0495301f267f82",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "repository_path": "knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "bytes": 5783,
+          "sha256": "e8a7a4f984099c05bad66783b23a7cf3d918186f44717aa6a42cc681622d9918",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "08-LACUNAS-E-ROADMAP.md",
+          "repository_path": "knowledge/live-2026-08-22/08-LACUNAS-E-ROADMAP.md",
+          "bytes": 979,
+          "sha256": "9e087af6b84b819f398e17dbf0b2b95d55b708e6814a637180dde641c70ae0fb",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "repository_path": "knowledge/live-2026-08-22/99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "bytes": 1044,
+          "sha256": "7f74b4f6c47d6fc3866bb2876ceb66eeb362472d20aacfe50350b8df9ca37640",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.estrategista-conteudo-dai",
+      "repository": "ac-agente-estrategista-conteudo-dai",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a7259c849d4819194844f4d99c1213d",
+      "builder_state": "DRAFT",
+      "name": "Agente Estrategista de Conteúdo D.A.I. | Oficial (copy)",
+      "description": "Agente Estrategista de Conteúdo D.A.I. do Desafio Contadora CEO com IA, com criação, revisão de claims e validação humana.",
+      "conversation_starters": [
+        "Me ajude a gerar um carrossel",
+        "Transforme essa dúvida em um conteúdo ",
+        "Crie um roteiro de reels pra captar clientes"
+      ],
+      "capabilities": [
+        true,
+        true,
+        false
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/system.md",
+        "live_sha256": "913433ef733c39349debcfbdd7e9f4089c805b8a886641561fae193f33165247",
+        "local_sha256": "913433ef733c39349debcfbdd7e9f4089c805b8a886641561fae193f33165247",
+        "bytes": 3989,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "00-INDICE-CONTEUDO-DAI.md",
+          "repository_path": "knowledge/original/00-INDICE-CONTEUDO-DAI.md",
+          "bytes": 1791,
+          "sha256": "c6ea4fe713dc39be10e29d6bdc7db7ef376af0d7d1c662b1adfe9c772bc6ca3f",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "repository_path": "knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md",
+          "bytes": 1574,
+          "sha256": "778a96e79b40cd2a47ef5c7072a0ec34a0923b6c6c9ec8ad31ee3485d1b08c0f",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-ESCOPO-E-ROTEAMENTO.md",
+          "repository_path": "knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md",
+          "bytes": 3135,
+          "sha256": "51519021e1b3a9d7cb35d34a8bffad1f72e92f3bb63d75d5e5180c5b44898eec",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-FONTES-CANONICAS.md",
+          "repository_path": "knowledge/live-2026-08-22/03-FONTES-CANONICAS.md",
+          "bytes": 1270,
+          "sha256": "0509079194c0cc903e8d8484366e282737ed1706e27c29a4e0c575a87f3705e6",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "repository_path": "knowledge/live-2026-08-22/04-SKILLS-E-CENARIOS-DE-USO.md",
+          "bytes": 2007,
+          "sha256": "d1215ec328aada70b4b062a02f0b29841da55e3d8c46244d3441bfdb11f57b8c",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "repository_path": "knowledge/live-2026-08-22/05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "bytes": 2373,
+          "sha256": "2bf7ad547c167f26a42341edf5cb7e4289baa8fbbdd7e7ad017cc09168aca391",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "repository_path": "knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "bytes": 1132,
+          "sha256": "01ac88d4847ec0313529efc18d7227ebc10cb51dfd48c3bf9a80baefcc0e14ce",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "repository_path": "knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "bytes": 1498,
+          "sha256": "225e66b4b802b510251441796201c26d0131cf9b9498062c918727148d7ae22c",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "08-LACUNAS-E-ROADMAP.md",
+          "repository_path": "knowledge/live-2026-08-22/08-LACUNAS-E-ROADMAP.md",
+          "bytes": 1276,
+          "sha256": "5e9e18eb0e4fcf97cd4781bd4acaf41cde5bde4ac776b4da0503ca2297ae5072",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "09-BANCO-DE-ANGULOS-E-ROTEIROS.md",
+          "repository_path": "knowledge/original/09-BANCO-DE-ANGULOS-E-ROTEIROS.md",
+          "bytes": 12299,
+          "sha256": "aaef4c463988e7f9be08b1cc8b66429dd56a6772a28322f2538917dbbefb09af",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "repository_path": "knowledge/live-2026-08-22/99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "bytes": 1033,
+          "sha256": "025e1be8eb58d2356a0c512fd2797e586b1824ba433e47894a3c976881e78c3c",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.fiscal",
+      "repository": "ac-agente-fiscal",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a72595c828c8191aec02f7931d9c626",
+      "builder_state": "DRAFT",
+      "name": "Agente Fiscal — Contadora CEO | Oficial (copy)",
+      "description": "Apoia rotinas fiscais com triagem, checklists, fontes, lacunas, handoffs e revisão humana — sem decisões tributárias definitivas.",
+      "conversation_starters": [
+        "Preciso organizar uma rotina fiscal com segurança e revisão humana."
+      ],
+      "capabilities": [
+        true,
+        false,
+        false
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/system.md",
+        "live_sha256": "12775f4f9fbf7b0b3fa62a06c6837f920944cbd0a49f1d7ab2eb90453787893b",
+        "local_sha256": "12775f4f9fbf7b0b3fa62a06c6837f920944cbd0a49f1d7ab2eb90453787893b",
+        "bytes": 4461,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "00-INDICE-FISCAL.md",
+          "repository_path": "knowledge/original/00-INDICE-FISCAL.md",
+          "bytes": 1938,
+          "sha256": "7b1847f59d362f0497936e3d20de5254860b5869b551638520db2781e6f96a9c",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "repository_path": "knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md",
+          "bytes": 2253,
+          "sha256": "fa65270ad3d49b0136b23cb6414f562f3d73dc775be84c13b519767f0f4b0067",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-ESCOPO-E-ROTEAMENTO.md",
+          "repository_path": "knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md",
+          "bytes": 1970,
+          "sha256": "6a9e0aac77085d42e836bd5b303704da168606d15982e158b2edfd3a39121313",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-FONTES-CANONICAS.md",
+          "repository_path": "knowledge/live-2026-08-22/03-FONTES-CANONICAS.md",
+          "bytes": 1696,
+          "sha256": "9ed86f2189998d30587c6ca808a24bb540e8802256ecebae7e0fb51e1842c976",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "repository_path": "knowledge/live-2026-08-22/04-SKILLS-E-CENARIOS-DE-USO.md",
+          "bytes": 1694,
+          "sha256": "a848d382372a90c28f11d40c576e09c276d813809aa9e3369aa61e9758fc00dc",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "repository_path": "knowledge/live-2026-08-22/05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "bytes": 2248,
+          "sha256": "a71c2927a672c9b6774fe2a1d81715154be0e427c6d6783c2bb83e9da60d8847",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "repository_path": "knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "bytes": 1058,
+          "sha256": "1efb16bd7d7b3b557c756fdda2e00d9b7f46bd8328ebef42471269271fcdac54",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "repository_path": "knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "bytes": 2037,
+          "sha256": "48dd271b4cbeca36937fbdccf995e567e88a701aea093f111fe2a0799c8a2fd6",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "08-LACUNAS-E-ROADMAP.md",
+          "repository_path": "knowledge/live-2026-08-22/08-LACUNAS-E-ROADMAP.md",
+          "bytes": 1602,
+          "sha256": "4fbf8a1b4b263f9b793749540a7c7815252723f6bae5b5a79a494253d021131b",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "repository_path": "knowledge/live-2026-08-22/99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "bytes": 1159,
+          "sha256": "c6d48fc8ab848800a10f1ef4091d6023b5db88f1cd86246b27c001601fa7786e",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.guia-operacao",
+      "repository": "ac-agente-guia-operacao",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a7259a1ec9c81918486ffda9824af6e",
+      "builder_state": "DRAFT",
+      "name": "Agente Guia da Operação CEO | Oficial (copy)",
+      "description": "Porta de entrada da operação: identifica a demanda, indica o agente ou processo certo e entrega um briefing seguro para a equipe.",
+      "conversation_starters": [
+        "Não sei por onde começar. Qual agente e processo devo usar?",
+        "Tenho uma dúvida: qual agente devo abrir e qual briefing devo levar?",
+        "Localize o processo ou documento certo sem responder tecnicamente.",
+        "Ajude-me a delegar esta tarefa com responsável, evidência e revisão."
+      ],
+      "capabilities": [
+        false,
+        false,
+        true
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/system.md",
+        "live_sha256": "f371578b66568522a56c164bffb90d47400c1aafde357d71c9fd52f13423defd",
+        "local_sha256": "f371578b66568522a56c164bffb90d47400c1aafde357d71c9fd52f13423defd",
+        "bytes": 8194,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "10-REGISTRO-CANONICO-AGENTES-V2.csv",
+          "repository_path": "knowledge/original/10-REGISTRO-CANONICO-AGENTES-V2.csv",
+          "bytes": 14410,
+          "sha256": "5916f2363de69a6f1b8e18d9565fb2b9bd2d7be2bf2a855728abdd3a6c77ecaf",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "11-MATRIZ-ROTAS-HANDOFFS-V2.csv",
+          "repository_path": "knowledge/original/11-MATRIZ-ROTAS-HANDOFFS-V2.csv",
+          "bytes": 8467,
+          "sha256": "801ac839bff8ea76f5a1ab05967b281272ad9aa84a4d0f575e3923bcbfb7a706",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "13-SNAPSHOT-DORES-JOBS-2026-07-15.md",
+          "repository_path": "knowledge/original/13-SNAPSHOT-DORES-JOBS-2026-07-15.md",
+          "bytes": 11187,
+          "sha256": "e3051604983f46a6c8151a334d4273ed583940e2d5f505d35d77e007ce2ec888",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "14-MATRIZ-DOR-JOB-ROTA-ARTEFATO-V2.csv",
+          "repository_path": "knowledge/original/14-MATRIZ-DOR-JOB-ROTA-ARTEFATO-V2.csv",
+          "bytes": 15615,
+          "sha256": "a6a2f969f7dfb79663a3d36073fb11e0093a7803ef309c1a33f031acc927e5dc",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "19-MAPA-LOGICO-NOTION-V2.md",
+          "repository_path": "knowledge/original/19-MAPA-LOGICO-NOTION-V2.md",
+          "bytes": 8147,
+          "sha256": "90f9d293f1e7f4eb58127142db3bef3809102aded7bc48651d1a4fbda7baec05",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "20-MATRIZ-PROCESSO-NOTION-V2.csv",
+          "repository_path": "knowledge/original/20-MATRIZ-PROCESSO-NOTION-V2.csv",
+          "bytes": 18785,
+          "sha256": "91754d892513d68107bc4e90f306ea29000cd94c5b0db4c5879ea8a15b55afdf",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "23-IDENTIDADE-FUNCAO-LIMITES-GUIA-V2.md",
+          "repository_path": "knowledge/original/23-IDENTIDADE-FUNCAO-LIMITES-GUIA-V2.md",
+          "bytes": 4675,
+          "sha256": "18dd7f1b149b5620a42b95e7c432b855c92f0a1c89fe43ff8f82212ce9decfee",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "24-CONTRATOS-HANDOFF-DELEGACAO-V2.md",
+          "repository_path": "knowledge/original/24-CONTRATOS-HANDOFF-DELEGACAO-V2.md",
+          "bytes": 5504,
+          "sha256": "5943c657859f508e08157f2894984a4826fd8aa264e2c47da72cb6bebb2ffa91",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "25-POLITICA-FONTES-STATUS-ABSTENCAO-V2.md",
+          "repository_path": "knowledge/original/25-POLITICA-FONTES-STATUS-ABSTENCAO-V2.md",
+          "bytes": 4341,
+          "sha256": "bcba99d90e7ff7d49cb4bf798fc0a21b6f0ddacc7b1fe07e2051ee41ef57c89e",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "26-SEGURANCA-LGPD-DADOS-SENSIVEIS-V2.md",
+          "repository_path": "knowledge/original/26-SEGURANCA-LGPD-DADOS-SENSIVEIS-V2.md",
+          "bytes": 4153,
+          "sha256": "b5e07bb2a2760627ead6aec805669ce424d552f20994d0d850d63a750531757b",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "27-EXEMPLOS-RESPOSTAS-GUIA-V2.md",
+          "repository_path": "knowledge/original/27-EXEMPLOS-RESPOSTAS-GUIA-V2.md",
+          "bytes": 10944,
+          "sha256": "5bafd8326a3d3d5f9a0ea8b2e5c2fe8e48d8668cb1e4804fd7c028059b7edf70",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "28-LACUNAS-ROADMAP-CHANGELOG-V2.md",
+          "repository_path": "knowledge/original/28-LACUNAS-ROADMAP-CHANGELOG-V2.md",
+          "bytes": 5069,
+          "sha256": "3a4517ae225bda11c0c90504e6f6977678469359097b0f3f4a70fd1145c2a534",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "30-CATALOGO-PROCESSOS-NAVEGACAO-UPLOAD-V1.csv",
+          "repository_path": "knowledge/original/30-CATALOGO-PROCESSOS-NAVEGACAO-UPLOAD-V1.csv",
+          "bytes": 96020,
+          "sha256": "920d4b63d130744ec036f75f2c134c12c04cc3b7f1f38576ef2a76a2203db832",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "31-REGISTRO-LINKS-AGENTES-V2-1.csv",
+          "repository_path": "knowledge/original/31-REGISTRO-LINKS-AGENTES-V2-1.csv",
+          "bytes": 5134,
+          "sha256": "18a9ffc8b6e7a445de2b9539d8ab7ba73bec3e95ebccf6bd288718cb5d0ebd55",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "32-POLITICA-DISPONIBILIDADE-E-LINKS-V2-1.md",
+          "repository_path": "knowledge/original/32-POLITICA-DISPONIBILIDADE-E-LINKS-V2-1.md",
+          "bytes": 2295,
+          "sha256": "e56453e876fc95fd8de4ca59218f27e9760303918a5fd82464a1efe3ef357d99",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "33-INDICE-KNOWLEDGE-PACK-V2-1.md",
+          "repository_path": "knowledge/original/33-INDICE-KNOWLEDGE-PACK-V2-1.md",
+          "bytes": 3857,
+          "sha256": "ceb06b227d2910af0ae40524410b7ace227a574bf7b775af895d82436cf2df85",
+          "result": "MATCH",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.processos-escritorio",
+      "repository": "ac-agente-processos-escritorio",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a725900102c8191bdcb028b9ab4f21a",
+      "builder_state": "DRAFT",
+      "name": "Agente de Processos do Escritório Autogerenciável (copy)",
+      "description": "Transforme um processo real do escritório em uma primeira versão visível, testável e revisável — com responsáveis, evidências, exceções, handoffs e plano de cinco dias.",
+      "conversation_starters": [
+        "Quero organizar um processo que hoje só funciona quando eu estou presente.",
+        "Tenho um rascunho de processo. Ajude a encontrar lacunas, evidências e exceções.",
+        "Quero transformar uma rotina do Fiscal, DP ou Contábil em um processo testável.",
+        "Monte comigo um plano de cinco dias para testar um processo com a equipe."
+      ],
+      "capabilities": [
+        false,
+        false,
+        false
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/system.md",
+        "live_sha256": "b97585a192658dad37d47ad4456feb39f9ab34b453ad1cec390da28b3c0924c9",
+        "local_sha256": "b97585a192658dad37d47ad4456feb39f9ab34b453ad1cec390da28b3c0924c9",
+        "bytes": 6957,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "00-INDICE-E-ESCOPO.md",
+          "repository_path": "knowledge/original/00-INDICE-E-ESCOPO.md",
+          "bytes": 2413,
+          "sha256": "8f3461074c4a0ed0c1aa55ab2139b2d2be362f990bce5a9c8624c839677852bf",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "01-METODO-PROCESSO-EXECUTAVEL.md",
+          "repository_path": "knowledge/original/01-METODO-PROCESSO-EXECUTAVEL.md",
+          "bytes": 3509,
+          "sha256": "1a3021e1374f2bcfe55f1e2f5b91f27152090252d18c612388f4773ceadfd5d9",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-PADROES-DEPARTAMENTAIS-E-RISCOS.md",
+          "repository_path": "knowledge/original/02-PADROES-DEPARTAMENTAIS-E-RISCOS.md",
+          "bytes": 4533,
+          "sha256": "f1dca8545e265739dfdb3be626221578eeb16c076657292d7cc3dca6b649c001",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-MODELOS-DE-SAIDA-E-PLANO-5-DIAS.md",
+          "repository_path": "knowledge/original/03-MODELOS-DE-SAIDA-E-PLANO-5-DIAS.md",
+          "bytes": 3658,
+          "sha256": "1a60d3ce068d16857824978a9e6cb39d6f616963dcb87f55e5a8dde3e31b0ccc",
+          "result": "MATCH",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.reforma-tributaria-rag",
+      "repository": "ac-agente-reforma-tributaria-rag",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a1b93a521b4819189fda957bcf00115",
+      "builder_state": "LIVE",
+      "name": "Agente Reforma Tributária Day - Consulta RAG",
+      "description": "Assistente consultivo para Reforma Tributária do Consumo, com busca RAG no corpus Day V2.3 via Chroma Cloud.",
+      "conversation_starters": [
+        "Tirar dúvida específica de um cliente",
+        "Explicar um ponto da Reforma pra um cliente",
+        "Fazer uma projeção tributária",
+        "Estudar dúvida técnica"
+      ],
+      "capabilities": [
+        true,
+        true,
+        true,
+        true
+      ],
+      "action_hosts": [
+        "day-rag-chroma-actions.onrender.com"
+      ],
+      "instruction": {
+        "repository_path": "instructions/current-live-2026-08-22.md",
+        "live_sha256": "98a6420fb64c1d1ae1ab3bbe8cf72691200c260b4d5b26c96141f07ba0c0b07a",
+        "local_sha256": "98a6420fb64c1d1ae1ab3bbe8cf72691200c260b4d5b26c96141f07ba0c0b07a",
+        "bytes": 3225,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "01-uso-obrigatorio-action.md",
+          "repository_path": "knowledge/live-2026-08-22/01-uso-obrigatorio-action.md",
+          "bytes": 551,
+          "sha256": "caa4d777c848e2c3bb76821c78c58438e88afd5764d1b3120affc80549c1a7c2",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-contrato-ciclo-vida.md",
+          "repository_path": "knowledge/live-2026-08-22/02-contrato-ciclo-vida.md",
+          "bytes": 544,
+          "sha256": "05a592e8d1cf83cf9eb1d219e5429c459cbfd90ea3d01e301803304d397b3bd5",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-hierarquia-fontes.md",
+          "repository_path": "knowledge/live-2026-08-22/03-hierarquia-fontes.md",
+          "bytes": 467,
+          "sha256": "405981cdcec01733ebf7a66b3ceef68cef5c644aa103f63ed972d5800d28dfe4",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-dfe-erp-classificacao.md",
+          "repository_path": "knowledge/live-2026-08-22/04-dfe-erp-classificacao.md",
+          "bytes": 407,
+          "sha256": "a5c9f68d2ee0a5a396ad8aa64ed8f6d8c950bed31de65832c7214f45f5475e7d",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-calculos-e-projecoes.md",
+          "repository_path": "knowledge/live-2026-08-22/05-calculos-e-projecoes.md",
+          "bytes": 410,
+          "sha256": "fbbfea7fb20e7a2a39cbf16fd773254539da2e8308d76d3b6cbe40933ed33049",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-pedagogia-e-resposta-cliente.md",
+          "repository_path": "knowledge/live-2026-08-22/06-pedagogia-e-resposta-cliente.md",
+          "bytes": 415,
+          "sha256": "e7967beb43a7d075fafd7fc9c45e1d85a935b92aca0b61eb13c3f52abc1089ba",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "07-cronograma-e-lacunas.md",
+          "repository_path": "knowledge/live-2026-08-22/07-cronograma-e-lacunas.md",
+          "bytes": 294,
+          "sha256": "43eb7c0f2ebed41fc0de5900d9e21b10fcd768ce5c8324583d9a3b754e504ce8",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "08-resposta-segura.md",
+          "repository_path": "knowledge/live-2026-08-22/08-resposta-segura.md",
+          "bytes": 355,
+          "sha256": "4c85b53f3f85bd0c07df540a0320ac29d0cb2c150e911cfae31c6d7c540c0002",
+          "result": "MATCH",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.reforma-tributaria-sem-surto",
+      "repository": "ac-agente-reforma-tributaria-sem-surto",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a725a3feec081919ba9131c9f475341",
+      "builder_state": "DRAFT",
+      "name": "Day Agente da Reforma Tributária Sem Surto (copy)",
+      "description": "Especialista consultiva em Reforma Tributária do Consumo para contadores: IBS, CBS, IS, DFe/XML/ERP, créditos e respostas claras para clientes.",
+      "conversation_starters": [
+        "Analisar impacto da Reforma em um cliente específico",
+        "Responder dúvida específica de cliente",
+        "Revisar nota fiscal, XML e ERP do cliente",
+        "Adequar cliente da melhor maneira à Reforma"
+      ],
+      "capabilities": [
+        true,
+        true,
+        true
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/system.md",
+        "live_sha256": "e984f051f2cbd4fbac123885dac95157917c4281fd985c18e7a7d95c1fa409f8",
+        "local_sha256": "e984f051f2cbd4fbac123885dac95157917c4281fd985c18e7a7d95c1fa409f8",
+        "bytes": 7201,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "01-FONTES-OFICIAIS-E-VERSOES.md",
+          "repository_path": "knowledge/original/01-FONTES-OFICIAIS-E-VERSOES.md",
+          "bytes": 2238,
+          "sha256": "a5d4f909f3c893d61d2aa2265914a423c2c6c94f0f7ce4f0b5416776b34f12d4",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-KB-CONSOLIDADA-IA-REFORMA.md",
+          "repository_path": "knowledge/original/02-KB-CONSOLIDADA-IA-REFORMA.md",
+          "bytes": 4280,
+          "sha256": "754d6fcfb84356b76e8f262b72f74beb135689c8bc0546354ec27862def60872",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-DOCUMENTOS-FISCAIS-ELETRONICOS.md",
+          "repository_path": "knowledge/original/03-DOCUMENTOS-FISCAIS-ELETRONICOS.md",
+          "bytes": 2723,
+          "sha256": "bd04fa2361e998bb83d894c8743f7f633d9901066b1e05573bfc1ee9b0b85538",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-BASE-ORIGINAL-PRESERVADA.md",
+          "repository_path": "knowledge/original/04-BASE-ORIGINAL-PRESERVADA.md",
+          "bytes": 2302,
+          "sha256": "c532693ebfcc6eacacaf8804c846253e4007e704bdcf159fc3245a0cdb22a36c",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-ECONET-FONTE-SECUNDARIA.md",
+          "repository_path": "knowledge/original/05-ECONET-FONTE-SECUNDARIA.md",
+          "bytes": 1782,
+          "sha256": "0aa380ad3b766b9b06da1bd391f4c664295470e5fd6c3355ec5cab309be673cf",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-GAPS-E-LIMITES-DA-IA.md",
+          "repository_path": "knowledge/original/06-GAPS-E-LIMITES-DA-IA.md",
+          "bytes": 2496,
+          "sha256": "bfb8bb305b66f4818353c21c1e3ccd2feb59f2757fe369845f7a7dfafd7bab33",
+          "result": "MATCH",
+          "hash_matches_live": true
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.reforma-tributaria",
+      "repository": "ac-agente-reforma-tributaria",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a7259cd04a48191a3bb1c2833b0ca2f",
+      "builder_state": "LIVE",
+      "name": "Agente Reforma — Sala Secreta (até 07/08)",
+      "description": "Acesso temporário da Sala Secreta encerrado. Fale com o Lucas para saber como voltar a acessar os agentes e materiais.",
+      "conversation_starters": [
+        "Meu acesso temporário encerrou. Como falar com o Lucas?",
+        "Quero saber como voltar a acessar os agentes da Sala Secreta."
+      ],
+      "capabilities": [
+        false,
+        false,
+        false
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/current-live-2026-08-22.md",
+        "live_sha256": "24d43b32d82c99dd7261fc6207b5a1750e98415ef8ecc541d17be818dc0d64ed",
+        "local_sha256": "24d43b32d82c99dd7261fc6207b5a1750e98415ef8ecc541d17be818dc0d64ed",
+        "bytes": 1585,
+        "result": "MATCH"
+      },
+      "knowledge": []
+    },
+    {
+      "agent_id": "ac.societario",
+      "repository": "ac-agente-societario",
+      "editor_url": "https://chatgpt.com/gpts/editor/g-6a725963258081919e7c1824531b1b6d",
+      "builder_state": "DRAFT",
+      "name": "Agente Societário — Contadora CEO | Oficial (copy)",
+      "description": "Apoia abertura, alteração e baixa com checklists, documentos, minutas revisáveis, lacunas e revisão humana.",
+      "conversation_starters": [
+        "Preciso de ajuda com o Societário"
+      ],
+      "capabilities": [
+        true,
+        false,
+        false
+      ],
+      "action_hosts": [],
+      "instruction": {
+        "repository_path": "instructions/system.md",
+        "live_sha256": "bc4e1a6d10fe54905a8f757dd1a24f8cdedb2891b67fc0c9b533fba0ad31d3f0",
+        "local_sha256": "bc4e1a6d10fe54905a8f757dd1a24f8cdedb2891b67fc0c9b533fba0ad31d3f0",
+        "bytes": 4272,
+        "result": "MATCH"
+      },
+      "knowledge": [
+        {
+          "filename": "00-INDICE-SOCIETARIO.md",
+          "repository_path": "knowledge/original/00-INDICE-SOCIETARIO.md",
+          "bytes": 2403,
+          "sha256": "ef3bef2bbcad09f7719f902a7197370cb2fe5e5305cfe0cc125b65b731ba0ff0",
+          "result": "MATCH",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "repository_path": "knowledge/live-2026-08-22/01-REGRAS-DE-USO-E-LIMITES.md",
+          "bytes": 3710,
+          "sha256": "e43d266665eb75e0ce70ccb3c81d44522361ac0eab2cafdc7097784b970d0bf2",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "02-ESCOPO-E-ROTEAMENTO.md",
+          "repository_path": "knowledge/live-2026-08-22/02-ESCOPO-E-ROTEAMENTO.md",
+          "bytes": 4060,
+          "sha256": "f33fb3d1913b41d883df2bca26cb90031d355fa875e281982b6a5c88912d19cf",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "03-FONTES-CANONICAS.md",
+          "repository_path": "knowledge/live-2026-08-22/03-FONTES-CANONICAS.md",
+          "bytes": 4388,
+          "sha256": "7e950c1273506dd5407a65071ec5c6c2358ba9674135259178c8909fa63db5a6",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "repository_path": "knowledge/live-2026-08-22/04-SKILLS-E-CENARIOS-DE-USO.md",
+          "bytes": 2509,
+          "sha256": "21ebc0850b6c0f55bb1cc161eeff10c2def22e7d3c4910400cbae8c682cc5376",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "repository_path": "knowledge/live-2026-08-22/05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "bytes": 3163,
+          "sha256": "e4234c4ee9cb1b927cd3aae8e298d653903a19ef6e3dd9c72acd66ab84b88a81",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "repository_path": "knowledge/live-2026-08-22/06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md",
+          "bytes": 1883,
+          "sha256": "85569279cb7095e4b44d295027be3b5bc88f5bd711663f5d276a44b541a9282a",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "repository_path": "knowledge/live-2026-08-22/07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "bytes": 3193,
+          "sha256": "039435c61b72f07a56f97d54953553b4922bbc15dc7d6aa46eba499370fcf20a",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "08-LACUNAS-E-ROADMAP.md",
+          "repository_path": "knowledge/live-2026-08-22/08-LACUNAS-E-ROADMAP.md",
+          "bytes": 2298,
+          "sha256": "1a9d97b3afd2ab51872819f6c5d2887c0fc38d165e884852e09c694302d5b2e3",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        },
+        {
+          "filename": "99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "repository_path": "knowledge/live-2026-08-22/99-FONTES-LACUNAS-E-CONTROLE-DE-VERSAO.md",
+          "bytes": 2103,
+          "sha256": "77479df98ffd111deea0d50b8711195c91213b3dec69fa3be4c35635b10a40ba",
+          "result": "DIFFERENT",
+          "hash_matches_live": true
+        }
+      ]
+    }
+  ]
+}

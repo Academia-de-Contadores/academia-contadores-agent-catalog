@@ -1,0 +1,74 @@
+schema_version: 1
+agents:
+  - agent_id: ac.captacao-clientes
+    repository: ac-agente-captacao-clientes
+    editor_url: https://chatgpt.com/gpts/editor/g-6a72599d1e28819181c68d513fc6cc09
+    instruction_path: instructions/system.md
+    knowledge_path: knowledge/live-2026-08-22
+    actions_policy: none
+  - agent_id: ac.contabil
+    repository: ac-agente-contabil
+    editor_url: https://chatgpt.com/gpts/editor/g-6a725977a3648191af38146c635b4c86
+    instruction_path: instructions/current-live-2026-08-22.md
+    knowledge_path: knowledge/live-2026-08-22
+    actions_policy: none
+  - agent_id: ac.dp
+    repository: ac-agente-dp
+    editor_url: https://chatgpt.com/gpts/editor/g-6a725829fc9c8191a652858f5980d4f4
+    instruction_path: instructions/system.md
+    knowledge_path: knowledge/original
+    actions_policy: none
+  - agent_id: ac.entrada-clientes
+    repository: ac-agente-entrada-clientes
+    editor_url: https://chatgpt.com/gpts/editor/g-6a725998eaac81919fc16fc528de36ef
+    instruction_path: instructions/system.md
+    knowledge_path: knowledge/live-2026-08-22
+    actions_policy: none
+  - agent_id: ac.estrategista-conteudo-dai
+    repository: ac-agente-estrategista-conteudo-dai
+    editor_url: https://chatgpt.com/gpts/editor/g-6a7259c849d4819194844f4d99c1213d
+    instruction_path: instructions/system.md
+    knowledge_path: knowledge/live-2026-08-22
+    actions_policy: none
+  - agent_id: ac.fiscal
+    repository: ac-agente-fiscal
+    editor_url: https://chatgpt.com/gpts/editor/g-6a72595c828c8191aec02f7931d9c626
+    instruction_path: instructions/system.md
+    knowledge_path: knowledge/live-2026-08-22
+    actions_policy: none
+  - agent_id: ac.guia-operacao
+    repository: ac-agente-guia-operacao
+    editor_url: https://chatgpt.com/gpts/editor/g-6a7259a1ec9c81918486ffda9824af6e
+    instruction_path: instructions/system.md
+    knowledge_path: knowledge/original
+    actions_policy: none
+  - agent_id: ac.processos-escritorio
+    repository: ac-agente-processos-escritorio
+    editor_url: https://chatgpt.com/gpts/editor/g-6a725900102c8191bdcb028b9ab4f21a
+    instruction_path: instructions/system.md
+    knowledge_path: knowledge/original
+    actions_policy: none
+  - agent_id: ac.reforma-tributaria-rag
+    repository: ac-agente-reforma-tributaria-rag
+    editor_url: https://chatgpt.com/gpts/editor/g-6a1b93a521b4819189fda957bcf00115
+    instruction_path: instructions/current-live-2026-08-22.md
+    knowledge_path: knowledge/live-2026-08-22
+    actions_policy: required
+  - agent_id: ac.reforma-tributaria-sem-surto
+    repository: ac-agente-reforma-tributaria-sem-surto
+    editor_url: https://chatgpt.com/gpts/editor/g-6a725a3feec081919ba9131c9f475341
+    instruction_path: instructions/system.md
+    knowledge_path: knowledge/original
+    actions_policy: none
+  - agent_id: ac.reforma-tributaria
+    repository: ac-agente-reforma-tributaria
+    editor_url: https://chatgpt.com/gpts/editor/g-6a7259cd04a48191a3bb1c2833b0ca2f
+    instruction_path: instructions/current-live-2026-08-22.md
+    knowledge_path: knowledge/live-2026-08-22
+    actions_policy: none
+  - agent_id: ac.societario
+    repository: ac-agente-societario
+    editor_url: https://chatgpt.com/gpts/editor/g-6a725963258081919e7c1824531b1b6d
+    instruction_path: instructions/system.md
+    knowledge_path: knowledge/live-2026-08-22
+    actions_policy: none

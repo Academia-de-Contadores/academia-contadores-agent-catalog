@@ -182,3 +182,9 @@ aliases:
     canonical_agent_id: ac.societario
     relationship: temporary
     repository_created: false
+  - source_name: Agente de Processos do Escritório Autogerenciável (variante publicada)
+    source_url: https://chatgpt.com/gpts/editor/g-6a6ea5f0985c8191971aa805e5ad759f
+    identity_note: Variante publicada observada em 2026-08-22 sem anexos no painel Knowledge; não é o editor canônico g-6a725900102c8191bdcb028b9ab4f21a auditado para paridade de conteúdo.
+    canonical_agent_id: ac.processos-escritorio
+    relationship: copy
+    repository_created: false

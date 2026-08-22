@@ -10,6 +10,21 @@ Aliases registram apenas nome, URL e relação com a fonte canônica; eles não 
 bash scripts/validate-catalog.sh
 ```
 
+## Paridade com o GPT Builder
+
+`catalog/live-parity.yaml` define os 12 editores canônicos. A captura
+versionada em `snapshots/2026-08-22/builder-evidence.json` registra os campos
+visíveis no Builder e o SHA-256 de cada anexo baixado. Para confirmar que os
+arquivos locais ainda correspondem a essa evidência, execute:
+
+```bash
+bash scripts/validate-live-parity.sh snapshots/2026-08-22/builder-evidence.json
+```
+
+O comando só retorna sucesso quando instruções, arquivos de Knowledge, bytes,
+hashes e a Action RAG registrada no snapshot ainda são idênticos à captura do
+Builder. Ele não altera o GPT nem baixa arquivos.
+
 ## Proteções no GitHub
 
 O repositório remoto é privado. No plano atual da organização, a API do GitHub
