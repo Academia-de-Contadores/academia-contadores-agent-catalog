@@ -176,3 +176,9 @@ aliases:
     canonical_agent_id: ac.contabil
     relationship: superseded
     repository_created: false
+  - source_name: Agente Societário temporario - Bianca CEO
+    source_url: https://chatgpt.com/g/g-6a760e55b9b88191a6e3582ffcceffc9-agente-societario-temporario-bianca-ceo
+    identity_note: Identificado no editor autenticado em 2026-08-22; o painel Knowledge exibe os mesmos 10 nomes do agente societário canônico, sem verificação de conteúdo byte a byte.
+    canonical_agent_id: ac.societario
+    relationship: temporary
+    repository_created: false
