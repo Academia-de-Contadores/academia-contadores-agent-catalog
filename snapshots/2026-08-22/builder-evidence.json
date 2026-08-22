@@ -978,6 +978,13 @@
       "action_hosts": [
         "day-rag-chroma-actions.onrender.com"
       ],
+      "action": {
+        "repository_path": "connectors/actions/searchDayRagCorpus/openapi.live-2026-08-22.json",
+        "privacy_policy_url": "https://day-rag-chroma-actions.onrender.com/privacy",
+        "semantic_sha256": "eb8334171902c9c6471e1079c5e1098334c8b23b426e983c16fe88440899f7d5",
+        "live_bytes": 14200,
+        "result": "MATCH"
+      },
       "instruction": {
         "repository_path": "instructions/current-live-2026-08-22.md",
         "live_sha256": "98a6420fb64c1d1ae1ab3bbe8cf72691200c260b4d5b26c96141f07ba0c0b07a",

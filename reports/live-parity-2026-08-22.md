@@ -25,6 +25,10 @@ local que representa cada anexo ativo.
 | Action RAG com schema local validado | 1/1 |
 | Bloqueios de coleta | 0 |
 
+O schema OpenAPI da Action RAG também foi comparado semanticamente com o
+Builder: SHA-256 `eb8334171902c9c6471e1079c5e1098334c8b23b426e983c16fe88440899f7d5`.
+O verificador recalcula esse hash a partir do arquivo versionado.
+
 Os 54 arquivos que mudaram foram preservados em snapshots separados nos
 repositórios de Captação, Contábil, Entrada, Conteúdo, Fiscal e Societário.
 Os arquivos em `knowledge/original/` continuam como registros históricos de

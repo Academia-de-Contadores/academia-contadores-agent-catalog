@@ -28,4 +28,13 @@ if bash "$validator" "$fixture/tampered-knowledge.json" >/dev/null 2>&1; then
   exit 1
 fi
 
+cp "$snapshot" "$fixture/tampered-action.json"
+jq '(.agents[] | select(.agent_id == "ac.reforma-tributaria-rag").action.semantic_sha256) = "0000000000000000000000000000000000000000000000000000000000000000"' \
+  "$fixture/tampered-action.json" > "$fixture/next.json"
+mv "$fixture/next.json" "$fixture/tampered-action.json"
+if bash "$validator" "$fixture/tampered-action.json" >/dev/null 2>&1; then
+  echo "expected tampered Action evidence to be rejected" >&2
+  exit 1
+fi
+
 echo "validate-live-parity tests passed"

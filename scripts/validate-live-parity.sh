@@ -89,14 +89,27 @@ while IFS= read -r agent; do
   done < <(jq -c '.knowledge[]' <<<"$entry")
 
   if [[ "$agent" = "ac.reforma-tributaria-rag" ]]; then
-    action_schema="$workspace/agent-repos/$repository/connectors/actions/searchDayRagCorpus/openapi.live-2026-08-22.json"
+    jq -e '
+      (.action | type == "object") and
+      (.action.repository_path | type == "string" and length > 0) and
+      (.action.privacy_policy_url | test("^https://")) and
+      (.action.semantic_sha256 | test("^[0-9a-f]{64}$")) and
+      (.action.live_bytes | type == "number" and . > 0) and
+      (.action.result == "MATCH")
+    ' <<<"$entry" >/dev/null || die "invalid Action evidence: $agent"
+    action_relative_path="$(jq -r '.action.repository_path' <<<"$entry")"
+    [[ "$action_relative_path" != /* && "$action_relative_path" != *".."* ]] || die "unsafe Action schema path: $agent"
+    action_schema="$workspace/agent-repos/$repository/$action_relative_path"
     test -f "$action_schema" || die "missing live Action schema: $agent"
     jq empty "$action_schema"
+    action_semantic_hash="$(jq -S -c . "$action_schema" | perl -0pe 's/\n\z//' | shasum -a 256 | awk '{print $1}')"
+    test "$action_semantic_hash" = "$(jq -r '.action.semantic_sha256' <<<"$entry")" || die "Action schema differs from Builder: $agent"
     while IFS= read -r action_host; do
       grep -Fq -- "$action_host" "$action_schema" || die "Action host differs from Builder: $agent"
     done < <(jq -r '.action_hosts[]' <<<"$entry")
   else
     test "$(jq '.action_hosts | length' <<<"$entry")" = "0" || die "unexpected Action host: $agent"
+    test "$(jq 'has("action")' <<<"$entry")" = "false" || die "unexpected Action evidence: $agent"
   fi
 done < <(jq -r '.agents[].agent_id' "$snapshot")
 
