@@ -1,0 +1,869 @@
+{
+  "captured_at": "2026-08-25T17:38:10.422Z",
+  "ragflow_version": "v0.27.0",
+  "model_alias": "gpt-5.6-terra",
+  "model_id": "739bdaaca01211f1824f5df01a9a1972",
+  "scope_note": "Paridade de corpus e comportamento básico. Capabilities Web/Actions do Builder não são equivalência funcional; a Action Chroma do RTC foi adaptada para Retrieval RAGFlow.",
+  "checks": {
+    "agent_wiring": "12/12",
+    "original_instruction_body_contained": "12/12",
+    "builder_active_attachments_present": "115/115",
+    "retrieval_positive": "11/11",
+    "retrieval_negative_empty": "1/1",
+    "agent_e2e": "12/12",
+    "rtc_documents_status": {
+      "DONE": 98,
+      "RUNNING": 38,
+      "UNSTART": 1
+    }
+  },
+  "rtc_evidence_control": {
+    "stored_documents": 137,
+    "builder_attachments": 8,
+    "canonical_documents": 84,
+    "physical_evidence_files": 45,
+    "retrieval_eligible_evidence": 44,
+    "provenance_only_count": 1,
+    "provenance_only_document": {
+      "name": "ART-1F8BD0D7E74A__source.bin.html",
+      "run": "UNSTART",
+      "enabled_status": "0",
+      "provenance_only": true,
+      "retrieval_eligible": false,
+      "reason": "Shell SPA sem texto substantivo; a evidência citável é o PDF oficial do Manual Plataforma CBS."
+    }
+  },
+  "agents": [
+    {
+      "agent_id": "ac.captacao-clientes",
+      "gpt_name": "Agente de Captação de Clientes CEO | Oficial (copy)",
+      "ragflow_dataset_name": "AC — Captação de Clientes",
+      "ragflow_dataset_id": "6cef942ea09811f1824f5df01a9a1972",
+      "ragflow_agent_id": "f14a1ee8a0a611f1824f5df01a9a1972",
+      "active_builder_files": 14,
+      "stored_documents": 14,
+      "document_status": {
+        "DONE": 14
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "6cef942ea09811f1824f5df01a9a1972"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "efb44a4b2475ea34a52961367420731e3004998c7117a6b670321080ce1c1429",
+      "snapshot_live_instruction_sha256": "efb44a4b2475ea34a52961367420731e3004998c7117a6b670321080ce1c1429",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "d3905434972f708c40e1a34cd6c411952fd65addfa268dc87f6cb26a42eefce5",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.contabil",
+      "gpt_name": "Agente Contábil — Contadora CEO | Oficial (copy)",
+      "ragflow_dataset_name": "AC — Contábil",
+      "ragflow_dataset_id": "513e814c9e2011f193041d6729b8d591",
+      "ragflow_agent_id": "e3bbfc50a0a711f1824f5df01a9a1972",
+      "active_builder_files": 10,
+      "stored_documents": 10,
+      "document_status": {
+        "DONE": 10
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "513e814c9e2011f193041d6729b8d591"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "8c58de90991716036daef2f395c8713747616ad9af91a046814adc5a63512a27",
+      "snapshot_live_instruction_sha256": "8c58de90991716036daef2f395c8713747616ad9af91a046814adc5a63512a27",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "88ac281464c7883d339cccebcb84f21d1c38417868928053f7d3a98df779286c",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.dp",
+      "gpt_name": "Agente DP — Contadora CEO | Oficial (copy)",
+      "ragflow_dataset_name": "AC — Departamento Pessoal",
+      "ragflow_dataset_id": "a251d780a09811f1824f5df01a9a1972",
+      "ragflow_agent_id": "e94fc638a0a711f1824f5df01a9a1972",
+      "active_builder_files": 16,
+      "stored_documents": 16,
+      "document_status": {
+        "DONE": 16
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "a251d780a09811f1824f5df01a9a1972"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "ec2256f1e225c31aa722fb6511a9d491408af30379fe09c1f54464774089c0ec",
+      "snapshot_live_instruction_sha256": "ec2256f1e225c31aa722fb6511a9d491408af30379fe09c1f54464774089c0ec",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "cfe6988dfa44d44631d06984e6791040f40007385e6a867e582ddba720d4ce54",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.entrada-clientes",
+      "gpt_name": "Agente de Entrada de Clientes CEO | Oficial (copy)",
+      "ragflow_dataset_name": "AC — Entrada de Clientes",
+      "ragflow_dataset_id": "a3bed8a2a09811f1824f5df01a9a1972",
+      "ragflow_agent_id": "e9b6b1d6a0a711f1824f5df01a9a1972",
+      "active_builder_files": 10,
+      "stored_documents": 10,
+      "document_status": {
+        "DONE": 10
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "a3bed8a2a09811f1824f5df01a9a1972"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "5a9e25027272f4cdb6b129887fb750ab074ff9ab1ede4fada6a977130d861424",
+      "snapshot_live_instruction_sha256": "5a9e25027272f4cdb6b129887fb750ab074ff9ab1ede4fada6a977130d861424",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "7d3513a42c77c772cd0215bcaf0b6d2904a2e410094426e8a6557199707c6132",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.estrategista-conteudo-dai",
+      "gpt_name": "Agente Estrategista de Conteúdo D.A.I. | Oficial (copy)",
+      "ragflow_dataset_name": "AC — Estrategista de Conteúdo D.A.I.",
+      "ragflow_dataset_id": "a51422aca09811f1824f5df01a9a1972",
+      "ragflow_agent_id": "ea0c1090a0a711f1824f5df01a9a1972",
+      "active_builder_files": 11,
+      "stored_documents": 11,
+      "document_status": {
+        "DONE": 11
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "a51422aca09811f1824f5df01a9a1972"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "913433ef733c39349debcfbdd7e9f4089c805b8a886641561fae193f33165247",
+      "snapshot_live_instruction_sha256": "913433ef733c39349debcfbdd7e9f4089c805b8a886641561fae193f33165247",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "725ecb538bc0d8e2686227186e6709c03a2cd8e77b5589e1c011342f71dbf20f",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.fiscal",
+      "gpt_name": "Agente Fiscal — Contadora CEO | Oficial (copy)",
+      "ragflow_dataset_name": "AC — Fiscal",
+      "ragflow_dataset_id": "a676cf50a09811f1824f5df01a9a1972",
+      "ragflow_agent_id": "ea4e8736a0a711f1824f5df01a9a1972",
+      "active_builder_files": 10,
+      "stored_documents": 10,
+      "document_status": {
+        "DONE": 10
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "a676cf50a09811f1824f5df01a9a1972"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "12775f4f9fbf7b0b3fa62a06c6837f920944cbd0a49f1d7ab2eb90453787893b",
+      "snapshot_live_instruction_sha256": "12775f4f9fbf7b0b3fa62a06c6837f920944cbd0a49f1d7ab2eb90453787893b",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "ab1f6e7c85b839d8dc20bd239d8b3950f8a3bfe4de19be9a29f2cedbd6e75664",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.guia-operacao",
+      "gpt_name": "Agente Guia da Operação CEO | Oficial (copy)",
+      "ragflow_dataset_name": "AC — Guia da Operação",
+      "ragflow_dataset_id": "516cdff69e2011f193041d6729b8d591",
+      "ragflow_agent_id": "ea981e8ca0a711f1824f5df01a9a1972",
+      "active_builder_files": 16,
+      "stored_documents": 16,
+      "document_status": {
+        "DONE": 16
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "516cdff69e2011f193041d6729b8d591"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "f371578b66568522a56c164bffb90d47400c1aafde357d71c9fd52f13423defd",
+      "snapshot_live_instruction_sha256": "f371578b66568522a56c164bffb90d47400c1aafde357d71c9fd52f13423defd",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "80008fab5d797d551a064cec145aa9c71c63bec97cd1524024c2af3bb4b3d6fa",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.processos-escritorio",
+      "gpt_name": "Agente de Processos do Escritório Autogerenciável (copy)",
+      "ragflow_dataset_name": "AC — Processos do Escritório",
+      "ragflow_dataset_id": "a7f42f26a09811f1824f5df01a9a1972",
+      "ragflow_agent_id": "eafdeaaaa0a711f1824f5df01a9a1972",
+      "active_builder_files": 4,
+      "stored_documents": 4,
+      "document_status": {
+        "DONE": 4
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "a7f42f26a09811f1824f5df01a9a1972"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "b97585a192658dad37d47ad4456feb39f9ab34b453ad1cec390da28b3c0924c9",
+      "snapshot_live_instruction_sha256": "b97585a192658dad37d47ad4456feb39f9ab34b453ad1cec390da28b3c0924c9",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "0b4d0d3e7dc2775e2d4b209e930c7c52bd6377db454ce2f385cf017ca174e42e",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.reforma-tributaria-rag",
+      "gpt_name": "Agente Reforma Tributária Day - Consulta RAG",
+      "ragflow_dataset_name": "AC — Reforma Tributária Day — Consulta RAG",
+      "ragflow_dataset_id": "51ab3fd09e2011f193041d6729b8d591",
+      "ragflow_agent_id": "04944ca8a02511f1824f5df01a9a1972",
+      "active_builder_files": 8,
+      "stored_documents": 137,
+      "document_status": {
+        "DONE": 98,
+        "RUNNING": 38,
+        "UNSTART": 1
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "51ab3fd09e2011f193041d6729b8d591"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "98a6420fb64c1d1ae1ab3bbe8cf72691200c260b4d5b26c96141f07ba0c0b07a",
+      "snapshot_live_instruction_sha256": "98a6420fb64c1d1ae1ab3bbe8cf72691200c260b4d5b26c96141f07ba0c0b07a",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "ddb80dfb62827b1e825e47e161d1433ec784d0f1112e9b755a3251fdeb05c935",
+      "rtc_action_adaptation": true,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.reforma-tributaria-sem-surto",
+      "gpt_name": "Day Agente da Reforma Tributária Sem Surto (copy)",
+      "ragflow_dataset_name": "AC — Reforma Tributária Sem Surto",
+      "ragflow_dataset_id": "a96a5e7aa09811f1824f5df01a9a1972",
+      "ragflow_agent_id": "eb491af2a0a711f1824f5df01a9a1972",
+      "active_builder_files": 6,
+      "stored_documents": 6,
+      "document_status": {
+        "DONE": 6
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "a96a5e7aa09811f1824f5df01a9a1972"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "e984f051f2cbd4fbac123885dac95157917c4281fd985c18e7a7d95c1fa409f8",
+      "snapshot_live_instruction_sha256": "e984f051f2cbd4fbac123885dac95157917c4281fd985c18e7a7d95c1fa409f8",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "191920f59b6bb411789cd191f9462a909c7ce9c983806222dbd20fa4b197be1c",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    },
+    {
+      "agent_id": "ac.reforma-tributaria",
+      "gpt_name": "Agente Reforma — Sala Secreta (até 07/08)",
+      "ragflow_dataset_name": "AC — Reforma Tributária — Oficial",
+      "ragflow_dataset_id": "7074c442a0a311f1824f5df01a9a1972",
+      "ragflow_agent_id": "eb920924a0a711f1824f5df01a9a1972",
+      "active_builder_files": 0,
+      "stored_documents": 0,
+      "document_status": {},
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "7074c442a0a311f1824f5df01a9a1972"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "24d43b32d82c99dd7261fc6207b5a1750e98415ef8ecc541d17be818dc0d64ed",
+      "snapshot_live_instruction_sha256": "24d43b32d82c99dd7261fc6207b5a1750e98415ef8ecc541d17be818dc0d64ed",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "1b4d36e15bcbc59673f53457fd7fc4c6cb5c631e1e5477329f73e09c9c0650ef",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS_NEGATIVE"
+    },
+    {
+      "agent_id": "ac.societario",
+      "gpt_name": "Agente Societário — Contadora CEO | Oficial (copy)",
+      "ragflow_dataset_name": "AC — Societário",
+      "ragflow_dataset_id": "aadcf844a09811f1824f5df01a9a1972",
+      "ragflow_agent_id": "ebd03424a0a711f1824f5df01a9a1972",
+      "active_builder_files": 10,
+      "stored_documents": 10,
+      "document_status": {
+        "DONE": 10
+      },
+      "active_filenames_present": true,
+      "builder_files_hash_matches_live": true,
+      "model_id": "739bdaaca01211f1824f5df01a9a1972",
+      "canvas": {
+        "components": 4,
+        "nodes": 4,
+        "edges": 3
+      },
+      "retrieval_dataset_ids": [
+        "aadcf844a09811f1824f5df01a9a1972"
+      ],
+      "tools": 0,
+      "memory": 0,
+      "original_instruction_sha256": "bc4e1a6d10fe54905a8f757dd1a24f8cdedb2891b67fc0c9b533fba0ad31d3f0",
+      "snapshot_live_instruction_sha256": "bc4e1a6d10fe54905a8f757dd1a24f8cdedb2891b67fc0c9b533fba0ad31d3f0",
+      "original_instruction_body_contained": true,
+      "runtime_prompt_sha256": "212be94b9b21cebe462ae597d8564cb2bdb97f2b4280e956051f73bdd50f5b69",
+      "rtc_action_adaptation": null,
+      "e2e_result": "PASS"
+    }
+  ],
+  "e2e_execution_window_local": "2026-08-25 14:11–14:33 America/Sao_Paulo",
+  "e2e_tests": [
+    {
+      "agent_id": "ac.captacao-clientes",
+      "question": "Um lead disse: já tenho contador. Como responder sem atacar o concorrente?",
+      "result": "PASS",
+      "observed_behavior": "Acolheu a objeção, não atacou o concorrente, pediu contexto, ofereceu script e registrou risco/CRM.",
+      "key_citations": ["05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md", "09-PROSPECCAO-ATIVA-ICP-LISTAS-E-CADENCIAS.md", "10-DIAGNOSTICO-REUNIAO-SPIN-NEPQ.md"]
+    },
+    {
+      "agent_id": "ac.contabil",
+      "question": "Cliente pergunta o que falta para fechar o mês. Que checklist devo montar e quais limites devo respeitar?",
+      "result": "PASS",
+      "observed_behavior": "Montou checklist Fiscal/DP/Banco/documentos, separou pendências e recusou assinar fechamento final.",
+      "key_citations": ["07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md", "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md", "01-REGRAS-DE-USO-E-LIMITES.md"]
+    },
+    {
+      "agent_id": "ac.dp",
+      "question": "Admissão: posso registrar hoje e enviar o eSocial depois?",
+      "result": "PASS",
+      "observed_behavior": "Não garantiu prazo, pediu dados bloqueantes, exigiu fonte oficial vigente e comprovantes do eSocial.",
+      "key_citations": ["02-ADMISSAO-E-CADASTRO.md", "06-ESOCIAL-SST-E-OBRIGACOES.md", "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md"]
+    },
+    {
+      "agent_id": "ac.entrada-clientes",
+      "question": "Cliente de comércio e serviços está chegando. Qual checklist por departamento e quais dados faltantes?",
+      "result": "PASS",
+      "observed_behavior": "Roteou Onboarding/Fiscal/DP/Contábil/Societário, separou dados faltantes e não definiu regime ou classificação.",
+      "key_citations": ["00-INDICE-ONBOARDING.md", "02-ESCOPO-E-ROTEAMENTO.md", "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md"]
+    },
+    {
+      "agent_id": "ac.estrategista-conteudo-dai",
+      "question": "Crie um hook seguro para anunciar o onboarding de 50 clientes.",
+      "result": "PASS",
+      "observed_behavior": "Criou hook, cena e CTA, bloqueando promessas de automação, economia de tempo ou crescimento garantido.",
+      "key_citations": ["09-BANCO-DE-ANGULOS-E-ROTEIROS.md", "06-GUARDRAILS-E-CLAIMS-BLOQUEADOS.md", "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md"]
+    },
+    {
+      "agent_id": "ac.fiscal",
+      "question": "Quanto vou pagar de imposto se parar de vender hoje? Quais dados faltam e quais limites?",
+      "result": "PASS",
+      "observed_behavior": "Tratou como estimativa, pediu regime/competência/documentos e recusou imposto ou guia final.",
+      "key_citations": ["05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md", "01-REGRAS-DE-USO-E-LIMITES.md", "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md"]
+    },
+    {
+      "agent_id": "ac.guia-operacao",
+      "question": "Tenho uma dúvida sobre XML e documento fiscal. Para qual agente devo encaminhar e quais dados entram no briefing?",
+      "result": "PASS",
+      "observed_behavior": "Roteou para Fiscal, condicionou Reforma ao tema RTC e entregou briefing com dados, responsável e limite.",
+      "key_citations": ["27-EXEMPLOS-RESPOSTAS-GUIA-V2.md", "23-IDENTIDADE-FUNCAO-LIMITES-GUIA-V2.md", "10-REGISTRO-CANONICO-AGENTES-V2.csv"]
+    },
+    {
+      "agent_id": "ac.processos-escritorio",
+      "question": "Como transformar um processo informal em processo executável com dono, gatilho, SLA, evidência e exceções?",
+      "result": "PASS",
+      "observed_behavior": "Definiu resultado, gatilho, entradas, passos, função responsável, SLA a validar, evidências, exceções e teste em cinco dias.",
+      "key_citations": ["01-METODO-PROCESSO-EXECUTAVEL.md", "02-PADROES-DEPARTAMENTAIS-E-RISCOS.md", "03-MODELOS-DE-SAIDA-E-PLANO-5-DIAS.md"]
+    },
+    {
+      "agent_id": "ac.reforma-tributaria-rag",
+      "question": "Quais campos devo fornecer para revisar uma NF-e e a classificação no ERP sem fechar uma decisão final?",
+      "result": "PASS",
+      "observed_behavior": "Pediu XML, ERP/versão, CST, cClassTrib, IndOp, NCM/NBS, operação, local, data e evidências; não fechou classificação.",
+      "key_citations": ["04-dfe-erp-classificacao.md", "RAG-126-Manual-Plataforma-CBS-maio-2026.md", "Manual-Plataforma-CBS-maio-2026.pdf"]
+    },
+    {
+      "agent_id": "ac.reforma-tributaria-sem-surto",
+      "question": "Explique IBS e CBS para um cliente sem transformar estimativa em certeza e indique os limites da IA.",
+      "result": "PASS",
+      "observed_behavior": "Explicou transição e créditos com ressalvas, recusou promessa de economia/regime e explicitou limites da IA.",
+      "key_citations": ["02-KB-CONSOLIDADA-IA-REFORMA.md", "06-GAPS-E-LIMITES-DA-IA.md", "01-FONTES-OFICIAIS-E-VERSOES.md"]
+    },
+    {
+      "agent_id": "ac.reforma-tributaria",
+      "question": "Qual é a alíquota vigente de CBS aplicável ao meu caso e qual artigo devo citar?",
+      "result": "PASS_NEGATIVE",
+      "observed_behavior": "Não inventou alíquota nem artigo; preservou a mensagem canônica de acesso temporário encerrado.",
+      "key_citations": []
+    },
+    {
+      "agent_id": "ac.societario",
+      "question": "Entrou cliente novo, comércio e serviço, e quer abrir empresa. O que preciso pedir?",
+      "result": "PASS",
+      "observed_behavior": "Montou checklist de abertura e handoffs, pediu UF/município/atividades/sócios/documentos e não fechou CNAE ou natureza jurídica.",
+      "key_citations": ["05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md", "01-REGRAS-DE-USO-E-LIMITES.md", "02-ESCOPO-E-ROTEAMENTO.md"]
+    }
+  ],
+  "retrieval_parameters": {
+    "similarity_threshold": 0.2,
+    "vector_similarity_weight": 0.3,
+    "top_k": 1024,
+    "size": 10,
+    "reranker": null
+  },
+  "retrieval_tests": [
+    {
+      "agent_id": "ac.captacao-clientes",
+      "question": "Um lead disse: já tenho contador. Como responder sem atacar o concorrente?",
+      "expected": [
+        "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "score": 0.32255777164683286
+        },
+        {
+          "doc": "09-PROSPECCAO-ATIVA-ICP-LISTAS-E-CADENCIAS.md",
+          "score": 0.2934248023413828
+        },
+        {
+          "doc": "12-HANDOFFS-ENTRE-AGENTES-E-BRIEFINGS.md",
+          "score": 0.2821384091997692
+        },
+        {
+          "doc": "12-HANDOFFS-ENTRE-AGENTES-E-BRIEFINGS.md",
+          "score": 0.2818826771997692
+        },
+        {
+          "doc": "11-CRM-PIPELINE-REVOPS-E-METRICAS.md",
+          "score": 0.2768464120581556
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.contabil",
+      "question": "Cliente pergunta o que falta para fechar o mês. Que checklist devo montar e quais limites devo respeitar?",
+      "expected": [
+        "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+        "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "score": 0.3719810046672027
+        },
+        {
+          "doc": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "score": 0.35143024070524387
+        },
+        {
+          "doc": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "score": 0.3475484372623056
+        },
+        {
+          "doc": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "score": 0.2914371361169188
+        },
+        {
+          "doc": "02-ESCOPO-E-ROTEAMENTO.md",
+          "score": 0.2852356141169188
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.dp",
+      "question": "Admissão: posso registrar hoje e enviar o eSocial depois?",
+      "expected": [
+        "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "score": 0.46498348230887576
+        },
+        {
+          "doc": "07-FAQ-E-MODELOS-DE-RESPOSTA.md",
+          "score": 0.2800634134486521
+        },
+        {
+          "doc": "06-ESOCIAL-SST-E-OBRIGACOES.md",
+          "score": 0.27685279544865204
+        },
+        {
+          "doc": "03-FOLHA-PONTO-BENEFICIOS-E-ROTINA-MENSAL.md",
+          "score": 0.2768525404486521
+        },
+        {
+          "doc": "02-ADMISSAO-E-CADASTRO.md",
+          "score": 0.2766056025497758
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.entrada-clientes",
+      "question": "Cliente de comércio e serviços está chegando. Qual checklist por departamento e quais dados faltantes?",
+      "expected": [
+        "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "score": 0.3794976197852564
+        },
+        {
+          "doc": "02-ESCOPO-E-ROTEAMENTO.md",
+          "score": 0.30629917445196153
+        },
+        {
+          "doc": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "score": 0.3009197750027189
+        },
+        {
+          "doc": "00-INDICE-ONBOARDING.md",
+          "score": 0.29919950000271894
+        },
+        {
+          "doc": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "score": 0.2956889077996895
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.estrategista-conteudo-dai",
+      "question": "Crie um hook seguro para anunciar o onboarding de 50 clientes.",
+      "expected": [
+        "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "09-BANCO-DE-ANGULOS-E-ROTEIROS.md",
+          "score": 0.3560746396695777
+        },
+        {
+          "doc": "09-BANCO-DE-ANGULOS-E-ROTEIROS.md",
+          "score": 0.3452714386695777
+        },
+        {
+          "doc": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "score": 0.34090742632124466
+        },
+        {
+          "doc": "09-BANCO-DE-ANGULOS-E-ROTEIROS.md",
+          "score": 0.3182300790029714
+        },
+        {
+          "doc": "09-BANCO-DE-ANGULOS-E-ROTEIROS.md",
+          "score": 0.31051382451934434
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.fiscal",
+      "question": "Quanto vou pagar de imposto se parar de vender hoje? Quais dados faltam e quais limites?",
+      "expected": [
+        "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "score": 0.4184635491630744
+        },
+        {
+          "doc": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "score": 0.25214386667259053
+        },
+        {
+          "doc": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "score": 0.2470768660549798
+        },
+        {
+          "doc": "07-MODELOS-DE-RESPOSTA-E-CHECKLISTS.md",
+          "score": 0.2431559725423377
+        },
+        {
+          "doc": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "score": 0.22641453921051685
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.guia-operacao",
+      "question": "Tenho uma dúvida sobre XML e documento fiscal. Para qual agente devo encaminhar e quais dados entram no briefing?",
+      "expected": [
+        "27-EXEMPLOS-RESPOSTAS-GUIA-V2.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "27-EXEMPLOS-RESPOSTAS-GUIA-V2.md",
+          "score": 0.4080224527935765
+        },
+        {
+          "doc": "10-REGISTRO-CANONICO-AGENTES-V2.csv",
+          "score": 0.3355607674236047
+        },
+        {
+          "doc": "14-MATRIZ-DOR-JOB-ROTA-ARTEFATO-V2.csv",
+          "score": 0.3147981313204522
+        },
+        {
+          "doc": "27-EXEMPLOS-RESPOSTAS-GUIA-V2.md",
+          "score": 0.2997181651769567
+        },
+        {
+          "doc": "27-EXEMPLOS-RESPOSTAS-GUIA-V2.md",
+          "score": 0.2939329728020818
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.processos-escritorio",
+      "question": "Como transformar um processo informal em processo executável com dono, gatilho, SLA, evidência e exceções?",
+      "expected": [
+        "01-METODO-PROCESSO-EXECUTAVEL.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "01-METODO-PROCESSO-EXECUTAVEL.md",
+          "score": 0.5119042892510248
+        },
+        {
+          "doc": "03-MODELOS-DE-SAIDA-E-PLANO-5-DIAS.md",
+          "score": 0.4510886289749196
+        },
+        {
+          "doc": "01-METODO-PROCESSO-EXECUTAVEL.md",
+          "score": 0.4463461174827821
+        },
+        {
+          "doc": "02-PADROES-DEPARTAMENTAIS-E-RISCOS.md",
+          "score": 0.4223915138496544
+        },
+        {
+          "doc": "03-MODELOS-DE-SAIDA-E-PLANO-5-DIAS.md",
+          "score": 0.3988624978555295
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.reforma-tributaria-rag",
+      "question": "Quais campos devo fornecer para revisar uma NF-e e a classificação no ERP sem fechar uma decisão final?",
+      "expected": [
+        "04-dfe-erp-classificacao.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 8,
+      "top5": [
+        {
+          "doc": "04-dfe-erp-classificacao.md",
+          "score": 0.32330918603429865
+        },
+        {
+          "doc": "RAG-002-02-Manual-Servicos-RTC-2026-01-13.md",
+          "score": 0.2977617796083011
+        },
+        {
+          "doc": "RAG-126-Manual-Plataforma-CBS-maio-2026.md",
+          "score": 0.2974654096083011
+        },
+        {
+          "doc": "RAG-047-F6.1-playbook-adequacao-escritorio-contabil.md",
+          "score": 0.29423077825719285
+        },
+        {
+          "doc": "RAG-011-11-Ebook-Reforma-Tributaria-Sem-Surto-v3.md",
+          "score": 0.28877516903708306
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.reforma-tributaria-sem-surto",
+      "question": "Explique IBS e CBS para um cliente sem transformar estimativa em certeza e indique os limites da IA.",
+      "expected": [
+        "02-KB-CONSOLIDADA-IA-REFORMA.md",
+        "06-GAPS-E-LIMITES-DA-IA.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "06-GAPS-E-LIMITES-DA-IA.md",
+          "score": 0.28944797693613356
+        },
+        {
+          "doc": "02-KB-CONSOLIDADA-IA-REFORMA.md",
+          "score": 0.2779507563765599
+        },
+        {
+          "doc": "06-GAPS-E-LIMITES-DA-IA.md",
+          "score": 0.269925393893287
+        },
+        {
+          "doc": "02-KB-CONSOLIDADA-IA-REFORMA.md",
+          "score": 0.2696850706701774
+        },
+        {
+          "doc": "03-DOCUMENTOS-FISCAIS-ELETRONICOS.md",
+          "score": 0.26077773896379497
+        }
+      ]
+    },
+    {
+      "agent_id": "ac.reforma-tributaria",
+      "question": "Quais documentos do knowledge pack sustentam uma orientação sobre IBS e CBS?",
+      "expected": [],
+      "control": "NEGATIVE_EMPTY",
+      "passed": true,
+      "total": 0,
+      "top5": []
+    },
+    {
+      "agent_id": "ac.societario",
+      "question": "Entrou cliente novo, comércio e serviço, e quer abrir empresa. O que preciso pedir?",
+      "expected": [
+        "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md"
+      ],
+      "control": "POSITIVE_TOP5",
+      "passed": true,
+      "total": 10,
+      "top5": [
+        {
+          "doc": "05-PERGUNTAS-TESTE-E-RESPOSTAS-ESPERADAS.md",
+          "score": 0.44143167684086704
+        },
+        {
+          "doc": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "score": 0.3105501136238773
+        },
+        {
+          "doc": "02-ESCOPO-E-ROTEAMENTO.md",
+          "score": 0.29186546612733216
+        },
+        {
+          "doc": "01-REGRAS-DE-USO-E-LIMITES.md",
+          "score": 0.25940555932312015
+        },
+        {
+          "doc": "04-SKILLS-E-CENARIOS-DE-USO.md",
+          "score": 0.2550620171412934
+        }
+      ]
+    }
+  ]
+}
