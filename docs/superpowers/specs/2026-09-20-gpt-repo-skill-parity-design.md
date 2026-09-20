@@ -1,7 +1,7 @@
 # Arquitetura de paridade GPT → repositório → skill
 
 **Data:** 2026-09-20  
-**Status:** proposta para validação humana  
+**Status:** aprovado para execução sequencial
 **Abordagem aprovada:** uma skill por família canônica; cópias e variações viram perfis ou aliases, salvo quando houver capacidade materialmente independente.
 
 ## 1. Objetivo
@@ -11,7 +11,7 @@ Auditar todos os GPTs personalizados acessíveis, consolidá-los em famílias ca
 1. um repositório remoto que preserve instruções, arquivos de Knowledge, ações, ferramentas e proveniência;
 2. uma skill versionada, instalável e portátil que reproduza a capacidade do GPT em um harness compatível;
 3. testes de paridade estrutural e funcional;
-4. evidência legível para validação humana;
+4. evidência legível para validação independente por outro agente;
 5. no caso do agente RAG, validação ponta a ponta do retrieval e das fontes.
 
 O resultado desejado não é uma cópia literal da interface do ChatGPT. É uma distribuição auditável da mesma capacidade, com as diferenças de plataforma explicitadas.
@@ -121,7 +121,7 @@ A matriz por GPT/instância verificará:
 - perfil e família de destino;
 - comportamento em cenários funcionais;
 - versão do repositório e da skill que representam o estado observado;
-- lacunas, exceções e decisão humana.
+- lacunas, exceções e decisão registrada.
 
 Os campos instáveis ou não exportáveis serão marcados como “não verificável”, e não como iguais.
 
@@ -197,7 +197,7 @@ Cada execução avaliará:
 - consistência entre resposta, chunks e documento original;
 - latência e falhas operacionais como métricas auxiliares.
 
-O relatório preservará resultados brutos e uma rubrica humana. Mudanças de ranking serão aceitas quando mantiverem fonte, cobertura e correção; regressões materiais bloquearão a versão.
+O relatório preservará resultados brutos e uma rubrica objetiva, revisada por um agente diferente daquele que implementou a skill. Mudanças de ranking serão aceitas quando mantiverem fonte, cobertura e correção; regressões materiais bloquearão a versão.
 
 ## 11. Sequência de execução
 
@@ -221,9 +221,9 @@ Aplicar o contrato aprovado a cada família, preservando os perfis necessários 
 
 Instalar cada skill em um harness sem dependências implícitas do computador de origem, executar validação estrutural e cenários funcionais e registrar incompatibilidades de plataforma.
 
-### Fase 6 — Publicação e validação humana
+### Fase 6 — Publicação e validação independente
 
-Versionar releases, atualizar o catálogo, gerar relatório consolidado e submeter nomes, perfis, lacunas, resultados de retrieval e decisões de depreciação à aprovação humana.
+Versionar releases, atualizar o catálogo, gerar relatório consolidado e delegar a outro agente a instalação limpa, os testes funcionais e a comparação breve com o GPT personalizado. Uma família aprovada segue imediatamente para publicação e libera o início da próxima; uma família reprovada permanece em correção até passar.
 
 ## 12. Critérios de aceite
 
@@ -237,7 +237,7 @@ Uma família só será declarada pronta quando:
 - os cenários funcionais mínimos passarem;
 - diferenças inevitáveis entre ChatGPT e harness estiverem documentadas;
 - nenhuma credencial estiver versionada;
-- houver validação humana registrada.
+- houver instalação limpa e validação independente registrada por outro agente.
 
 Para o RAG, também é obrigatório:
 
@@ -246,7 +246,7 @@ Para o RAG, também é obrigatório:
 - conjunto de perguntas executado nos quatro caminhos;
 - citações conferidas contra os documentos originais;
 - regressões e diferenças de ranking analisadas;
-- aprovação humana do relatório comparativo.
+- revisão independente sem achados críticos ou importantes no relatório comparativo.
 
 O objetivo global estará concluído quando as 12 famílias ativas atenderem esses critérios e o catálogo permitir rastrear, para qualquer skill, a instância GPT, o perfil, o commit, os arquivos e a evidência de validação correspondentes.
 
@@ -257,6 +257,5 @@ O objetivo global estará concluído quando as 12 famílias ativas atenderem ess
 - tratar similaridade temática como prova de origem ou equivalência;
 - reescrever o conteúdo dos anexos durante a preservação;
 - prometer equivalência de recursos que o harness não oferece;
-- apagar repositórios, histórico ou perfis legados antes de aprovação humana;
+- apagar repositórios, histórico ou perfis legados durante esta entrega;
 - considerar o item `asd` uma família canônica sem nova evidência.
-
