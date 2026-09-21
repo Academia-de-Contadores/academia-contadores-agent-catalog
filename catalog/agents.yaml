@@ -89,10 +89,26 @@ agents:
       release: evaluations/parity/release-validation-2026-09-21.md
   - id: ac.estrategista-conteudo-dai
     repository: ac-agente-estrategista-conteudo-dai
-    lifecycle: source-capture
+    repository_url: https://github.com/Academia-de-Contadores/ac-agente-estrategista-conteudo-dai.git
+    repository_commit: f347629b9fde45129d38f494f47f17029b43bc35
+    lifecycle: validated
     owner: Academia-de-Contadores
-    production_version: null
+    production_version: 0.2.0
     profiles: [canonical]
+    primary_gpt_id: g-6a7259c849d4819194844f4d99c1213d
+    skill_name: ac-estrategista-conteudo-dai
+    installed_path: $CODEX_HOME/skills/ac-estrategista-conteudo-dai
+    installed_regular_files: 25
+    installed_knowledge_files: 11
+    installed_symlinks: 0
+    installed_gitkeep_files: 0
+    installed_inventory_sha256: 45d7d110aec9a27f5cbf5cbfa15f0af5c1548b4d90a25eed0ba46220c7a8ec30
+    validation_evidence:
+      functional_comparison: evaluations/parity/local-parity-evaluation-2026-09-21-r2.md
+      source_audit: evaluations/live-editor-audit-2026-09-21.md
+      installation: reports/validation-2026-09-21.md
+      functional_evidence: evaluations/parity/local-parity-evaluation-2026-09-21-r2.md
+      release: reports/validation-2026-09-21.md
   - id: ac.reforma-tributaria
     repository: ac-agente-reforma-tributaria
     repository_url: https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria.git
