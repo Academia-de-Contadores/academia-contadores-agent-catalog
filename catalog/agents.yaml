@@ -75,7 +75,15 @@ agents:
       functional_evidence: evaluations/parity/task-5-fix1-evidence-2026-09-20/README.md
   - id: ac.reforma-tributaria-sem-surto
     repository: ac-agente-reforma-tributaria-sem-surto
-    lifecycle: source-capture
+    repository_url: https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-sem-surto.git
+    repository_commit: 2a2cf2e726911ab033fbf7c73c9c123fa275a18e
+    lifecycle: validated
     owner: Academia-de-Contadores
-    production_version: null
+    production_version: 0.2.0
     profiles: [canonical]
+    primary_gpt_id: g-6a725a3feec081919ba9131c9f475341
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-20.md
+      original_source_verification: evaluations/parity/original-source-verification-2026-09-20.md
+      installation: evaluations/parity/install-validation-2026-09-20.md
+      functional_evidence: evaluations/parity/local-results-2026-09-20.md
