@@ -32,7 +32,7 @@ agents:
   - id: ac.reforma-tributaria
     repository: ac-agente-reforma-tributaria
     repository_url: https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria.git
-    repository_commit: 7f8e48683c5168bee4b22c91f54c6e7ed9626232
+    repository_commit: e19d0f7fee8b627a1dcd91bd412cff7fb3a7c7b5
     lifecycle: validated
     owner: Academia-de-Contadores
     production_version: 0.2.0

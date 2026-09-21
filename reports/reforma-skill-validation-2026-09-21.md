@@ -5,7 +5,7 @@
 O catálogo local registra `ac.reforma-tributaria` na versão `0.2.0`, com
 lifecycle `validated`, perfis `current-closed`, `restored-technical` e
 `legacy-action` e commit-fonte
-`7f8e48683c5168bee4b22c91f54c6e7ed9626232`.
+`e19d0f7fee8b627a1dcd91bd412cff7fb3a7c7b5`.
 
 O GPT principal permanece
 `g-6a7259cd04a48191a3bb1c2833b0ca2f`. O perfil de paridade do GPT online é
