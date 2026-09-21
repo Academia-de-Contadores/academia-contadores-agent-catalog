@@ -15,9 +15,18 @@ agents:
   - agent_id: ac.dp
     repository: ac-agente-dp
     editor_url: https://chatgpt.com/gpts/editor/g-6a725829fc9c8191a652858f5980d4f4
+    profile: canonical
+    skill_version: 0.2.0
+    repository_commit: bf88a8f4536d95f16b2e08f701a399dd13ba2ccb
     instruction_path: instructions/system.md
     knowledge_path: knowledge/original
     actions_policy: none
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21-r1.md
+      source_audit: evaluations/live-editor-audit-2026-09-21.md
+      installation: evaluations/parity/install-validation-2026-09-21-r1.md
+      functional_evidence: evaluations/parity/local-results-2026-09-21-r1.md
+      release: evaluations/parity/release-validation-2026-09-21.md
   - agent_id: ac.entrada-clientes
     repository: ac-agente-entrada-clientes
     editor_url: https://chatgpt.com/gpts/editor/g-6a725998eaac81919fc16fc528de36ef
