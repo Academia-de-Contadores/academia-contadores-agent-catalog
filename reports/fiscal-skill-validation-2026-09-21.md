@@ -4,7 +4,7 @@
 
 O catálogo registra `ac.fiscal` na versão `0.2.0`, com lifecycle `validated`,
 perfis `canonical` e `public-safe`, skill `$ac-fiscal` e commit-fonte
-`b33fac8fb7ffb32e24bb7d1c6eceb4fae6c4830b`. O comportamento e o pacote
+`e1f3cf2ba90b2f4dee21e3e66870445afc839cf1`. O comportamento e o pacote
 instalado foram executados a partir de
 `e682cdc20a459732b316d8e9b63d843563f116ea`; o commit final acrescenta a
 evidência r4 sem alterar os 23 arquivos distribuíveis.

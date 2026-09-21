@@ -24,7 +24,7 @@ agents:
   - id: ac.fiscal
     repository: ac-agente-fiscal
     repository_url: https://github.com/Academia-de-Contadores/ac-agente-fiscal.git
-    repository_commit: b33fac8fb7ffb32e24bb7d1c6eceb4fae6c4830b
+    repository_commit: e1f3cf2ba90b2f4dee21e3e66870445afc839cf1
     lifecycle: validated
     owner: Academia-de-Contadores
     production_version: 0.2.0
