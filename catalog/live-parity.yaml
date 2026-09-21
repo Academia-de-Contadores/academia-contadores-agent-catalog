@@ -45,9 +45,18 @@ agents:
   - agent_id: ac.processos-escritorio
     repository: ac-agente-processos-escritorio
     editor_url: https://chatgpt.com/gpts/editor/g-6a725900102c8191bdcb028b9ab4f21a
+    profile: canonical
+    skill_version: 0.2.0
+    repository_commit: b892b553fadd92aa33c0927f5862c8748d353be0
     instruction_path: instructions/system.md
     knowledge_path: knowledge/original
     actions_policy: none
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21-r3.md
+      original_source_verification: evaluations/parity/original-source-verification-2026-09-21.md
+      installation: evaluations/parity/release-validation-2026-09-21.md
+      functional_evidence: evaluations/parity/release-validation-2026-09-21.md
+      release: evaluations/parity/release-validation-2026-09-21.md
   - agent_id: ac.reforma-tributaria-rag
     repository: ac-agente-reforma-tributaria-rag
     editor_url: https://chatgpt.com/gpts/editor/g-6a1b93a521b4819189fda957bcf00115
