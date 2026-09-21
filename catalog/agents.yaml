@@ -31,10 +31,18 @@ agents:
     profiles: [canonical]
   - id: ac.reforma-tributaria
     repository: ac-agente-reforma-tributaria
-    lifecycle: source-capture
+    repository_url: https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria.git
+    repository_commit: 3bd551813eb142acc7f8ed7f5fd34768d35d37e0
+    lifecycle: validated
     owner: Academia-de-Contadores
-    production_version: null
-    profiles: [canonical]
+    production_version: 0.2.0
+    profiles: [current-closed, restored-technical, legacy-action]
+    primary_gpt_id: g-6a7259cd04a48191a3bb1c2833b0ca2f
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21.md
+      original_source_verification: evaluations/parity/original-source-verification-2026-09-21.md
+      installation: evaluations/parity/install-validation-2026-09-21.md
+      functional_evidence: evaluations/parity/local-results-2026-09-21.md
   - id: ac.contabil
     repository: ac-agente-contabil
     lifecycle: source-capture

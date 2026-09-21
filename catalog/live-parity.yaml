@@ -79,9 +79,17 @@ agents:
   - agent_id: ac.reforma-tributaria
     repository: ac-agente-reforma-tributaria
     editor_url: https://chatgpt.com/gpts/editor/g-6a7259cd04a48191a3bb1c2833b0ca2f
+    profile: current-closed
+    skill_version: 0.2.0
+    repository_commit: 3bd551813eb142acc7f8ed7f5fd34768d35d37e0
     instruction_path: instructions/current-live-2026-08-22.md
     knowledge_path: knowledge/live-2026-08-22
     actions_policy: none
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21.md
+      original_source_verification: evaluations/parity/original-source-verification-2026-09-21.md
+      installation: evaluations/parity/install-validation-2026-09-21.md
+      functional_evidence: evaluations/parity/local-results-2026-09-21.md
   - agent_id: ac.societario
     repository: ac-agente-societario
     editor_url: https://chatgpt.com/gpts/editor/g-6a725963258081919e7c1824531b1b6d
