@@ -4,7 +4,7 @@
 
 O catálogo local registra `ac.reforma-tributaria-rag` na versão `0.2.0`,
 com lifecycle `validated`, perfis `current` e `legacy` e commit-fonte
-`c9c0e559d417fa7fd5d07a5af6a5ff04d3e2ab8e`.
+`49b03e619c15e339cfdae62d3b7113b92fb01867`.
 
 O GPT principal continua sendo
 `g-6a1b93a521b4819189fda957bcf00115`. A comparação independente registra
