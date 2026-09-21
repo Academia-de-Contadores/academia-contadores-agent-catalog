@@ -45,10 +45,26 @@ agents:
       release: evaluations/parity/release-validation-2026-09-21.md
   - id: ac.dp
     repository: ac-agente-dp
-    lifecycle: source-capture
+    repository_url: https://github.com/Academia-de-Contadores/ac-agente-dp.git
+    repository_commit: bf88a8f4536d95f16b2e08f701a399dd13ba2ccb
+    lifecycle: validated
     owner: Academia-de-Contadores
-    production_version: null
+    production_version: 0.2.0
     profiles: [canonical, public-safe]
+    primary_gpt_id: g-6a725829fc9c8191a652858f5980d4f4
+    skill_name: ac-dp
+    installed_path: /Users/levy/.codex/skills/ac-dp
+    installed_regular_files: 29
+    installed_knowledge_files: 16
+    installed_symlinks: 0
+    installed_gitkeep_files: 0
+    installed_inventory_sha256: 62d3060995045c3c80e766f22c792171c2607cfbbf1982784733500434bbd989
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21-r1.md
+      source_audit: evaluations/live-editor-audit-2026-09-21.md
+      installation: evaluations/parity/install-validation-2026-09-21-r1.md
+      functional_evidence: evaluations/parity/local-results-2026-09-21-r1.md
+      release: evaluations/parity/release-validation-2026-09-21.md
   - id: ac.societario
     repository: ac-agente-societario
     repository_url: https://github.com/Academia-de-Contadores/ac-agente-societario.git
