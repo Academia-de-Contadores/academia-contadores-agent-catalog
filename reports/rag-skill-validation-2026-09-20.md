@@ -4,16 +4,19 @@
 
 O catálogo local registra `ac.reforma-tributaria-rag` na versão `0.2.0`,
 com lifecycle `validated`, perfis `current` e `legacy` e commit-fonte
-`bd790e759f68ac658d2296c77edc8b2ef6136d8d`.
+`c9c0e559d417fa7fd5d07a5af6a5ff04d3e2ab8e`.
 
 O GPT principal continua sendo
 `g-6a1b93a521b4819189fda957bcf00115`. A comparação independente registra
 PASS funcional em 5/5 casos e informa que o GPT online permaneceu intacto
-como baseline.
+como baseline. O confronto adicional das afirmações/citações com os artefatos
+originais também passou em 5/5, tratando P5 explicitamente como fallback sem
+fonte recuperada e sem validação factual corrente.
 
 ## Evidências
 
 - comparação funcional: `evaluations/parity/gpt-comparison-2026-09-20-r2.md`;
+- confronto com originais: `evaluations/parity/original-source-verification-2026-09-20.md`;
 - instalação limpa: `evaluations/parity/install-validation-2026-09-20.md`;
 - evidência da rodada r2: `evaluations/parity/task-5-fix1-evidence-2026-09-20/README.md`.
 
