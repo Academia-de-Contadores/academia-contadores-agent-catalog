@@ -23,10 +23,26 @@ agents:
       release: evaluations/parity/release-validation-2026-09-21.md
   - id: ac.fiscal
     repository: ac-agente-fiscal
-    lifecycle: source-capture
+    repository_url: https://github.com/Academia-de-Contadores/ac-agente-fiscal.git
+    repository_commit: e656327b3e74ebf4dbd7b74bec69461ccf2338f9
+    lifecycle: validated
     owner: Academia-de-Contadores
-    production_version: null
+    production_version: 0.2.0
     profiles: [canonical, public-safe]
+    primary_gpt_id: g-6a72595c828c8191aec02f7931d9c626
+    skill_name: ac-fiscal
+    installed_path: /Users/levy/.codex/skills/ac-fiscal
+    installed_regular_files: 23
+    installed_knowledge_files: 10
+    installed_symlinks: 0
+    installed_gitkeep_files: 0
+    installed_inventory_sha256: 1dbaf695e412120a7dab360b34cdd636fd19c363c323560a2890e3dd0a0446b0
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21-r2.md
+      source_audit: evaluations/live-editor-audit-2026-09-21.md
+      installation: evaluations/parity/release-validation-2026-09-21.md
+      functional_evidence: evaluations/parity/local-results-2026-09-21-r2.md
+      release: evaluations/parity/release-validation-2026-09-21.md
   - id: ac.dp
     repository: ac-agente-dp
     lifecycle: source-capture

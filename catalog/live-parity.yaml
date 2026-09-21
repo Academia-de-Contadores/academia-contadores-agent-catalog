@@ -33,9 +33,18 @@ agents:
   - agent_id: ac.fiscal
     repository: ac-agente-fiscal
     editor_url: https://chatgpt.com/gpts/editor/g-6a72595c828c8191aec02f7931d9c626
+    profile: canonical
+    skill_version: 0.2.0
+    repository_commit: e656327b3e74ebf4dbd7b74bec69461ccf2338f9
     instruction_path: instructions/system.md
     knowledge_path: knowledge/live-2026-08-22
     actions_policy: none
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21-r2.md
+      source_audit: evaluations/live-editor-audit-2026-09-21.md
+      installation: evaluations/parity/release-validation-2026-09-21.md
+      functional_evidence: evaluations/parity/local-results-2026-09-21-r2.md
+      release: evaluations/parity/release-validation-2026-09-21.md
   - agent_id: ac.guia-operacao
     repository: ac-agente-guia-operacao
     editor_url: https://chatgpt.com/gpts/editor/g-6a7259a1ec9c81918486ffda9824af6e
