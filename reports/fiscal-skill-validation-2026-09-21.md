@@ -4,14 +4,17 @@
 
 O catálogo registra `ac.fiscal` na versão `0.2.0`, com lifecycle `validated`,
 perfis `canonical` e `public-safe`, skill `$ac-fiscal` e commit-fonte
-`e656327b3e74ebf4dbd7b74bec69461ccf2338f9`.
+`0078936c2070ff581a0e047038d02e30fc92bc6c`. O comportamento e o pacote
+instalado foram executados a partir de
+`e682cdc20a459732b316d8e9b63d843563f116ea`; o commit final acrescenta a
+evidência r4 sem alterar os 23 arquivos distribuíveis.
 
 O GPT principal permanece
 `g-6a72595c828c8191aec02f7931d9c626`. Os seis casos locais qualificam, com
-65/72 pontos: P1 11/12, P2 10/12, P3 10/12, P4 12/12, P5 11/12 e P6 11/12.
-P4 foi a única resposta rerodada após a correção; os demais resultados foram
-preservados da rodada integral anterior. A skill foi corrigida sem alterar o
-GPT online.
+70/72 pontos: P1 12/12, P2 11/12, P3 12/12, P4 12/12, P5 11/12 e P6 12/12.
+A rodada r4 executou novamente os seis casos contra a mesma fonte de
+comportamento, em ambiente limpo, e obteve 36/36 gates obrigatórios PASS. A
+skill foi validada sem alterar o GPT online.
 
 A baseline online congelada qualificou 2/6 casos sob a rubrica mais rígida da
 skill. Isso não é gate de release: o GPT é a fonte preservada de identidade e a
@@ -20,34 +23,36 @@ aprovação, sem fabricar conclusões.
 
 ## Evidências
 
-- comparação funcional inicial:
-  `evaluations/parity/gpt-comparison-2026-09-21.md`;
-- corretiva e comparação final de P4:
-  `evaluations/parity/gpt-comparison-2026-09-21-r2.md`;
-- respostas locais e composição final:
-  `evaluations/parity/local-results-2026-09-21-r2.md`;
+- avaliação funcional independente da rodada integral r4:
+  `evaluations/parity/gpt-comparison-2026-09-21-r4.md`;
+- respostas locais e síntese integral r4:
+  `evaluations/parity/local-results-2026-09-21-r4.md`;
+- matriz estruturada com as seis dimensões e os 36 gates:
+  `evaluations/parity/scoring-matrix-2026-09-21-r4.yaml`;
 - respostas reais congeladas do GPT:
   `evaluations/parity/gpt-outputs-2026-09-21.md`;
 - auditoria do editor e das fontes:
   `evaluations/live-editor-audit-2026-09-21.md`;
-- instalação e gate de release:
+- instalação seletiva r4:
+  `evaluations/parity/install-validation-2026-09-21-r4.md`;
+- consolidação do gate de release:
   `evaluations/parity/release-validation-2026-09-21.md`.
 
 Os caminhos acima são relativos ao repositório
 `https://github.com/Academia-de-Contadores/ac-agente-fiscal.git`. O artefato
 operacional durável é a versão `0.2.0` em `main` ou a tag `v0.2.0` que aponte
-para o mesmo conteúdo; o catálogo fixa o commit exato da preparação.
+para o mesmo conteúdo; o catálogo fixa o commit final da evidência r4.
 
 ## Instalação
 
 - Caminho validado: `/Users/levy/.codex/skills/ac-fiscal`.
 - Inventário: 23 arquivos regulares, dez arquivos de Knowledge, zero symlinks
   e zero `.gitkeep`.
-- Igualdade origem × instalação: PASS 23/23 por caminho e bytes.
+- Igualdade pacote × instalação: PASS 23/23 por caminho e bytes.
 - SHA-256 reproduzível do inventário:
-  `1dbaf695e412120a7dab360b34cdd636fd19c363c323560a2890e3dd0a0446b0`.
+  `b5a57d7a87fe2baf5ab1bc528245b81fad36408535cf55e9c4cada1ee4bb22cd`.
 - O mesmo hash foi reproduzido em um pacote temporário montado somente com a
-  allowlist; `quick_validate.py` passou na origem e na instalação.
+  allowlist; `quick_validate.py` passou no pacote e na instalação.
 
 ## Integridade do catálogo
 
@@ -72,6 +77,10 @@ em relação à base `f3f5c79`.
   base para inferir um único identificador interno.
 - Os primários internos citados pelo Knowledge continuam ausentes. A curadoria
   não é apresentada como fonte oficial vigente.
+- A avaliação r4 registrou dois limites menores, não bloqueantes: P2 não
+  explicita UF nem o alcance do ato por perfil de prestador/serviço; P5 usa
+  fontes genéricas em parte da matriz. O placar comportamental correto é
+  **Critical 0 / Important 0 / Minor 2** — não há alegação de zero minors.
 
 ## Rulings
 

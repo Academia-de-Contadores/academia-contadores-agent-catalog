@@ -24,7 +24,7 @@ agents:
   - id: ac.fiscal
     repository: ac-agente-fiscal
     repository_url: https://github.com/Academia-de-Contadores/ac-agente-fiscal.git
-    repository_commit: e656327b3e74ebf4dbd7b74bec69461ccf2338f9
+    repository_commit: 0078936c2070ff581a0e047038d02e30fc92bc6c
     lifecycle: validated
     owner: Academia-de-Contadores
     production_version: 0.2.0
@@ -36,12 +36,12 @@ agents:
     installed_knowledge_files: 10
     installed_symlinks: 0
     installed_gitkeep_files: 0
-    installed_inventory_sha256: 1dbaf695e412120a7dab360b34cdd636fd19c363c323560a2890e3dd0a0446b0
+    installed_inventory_sha256: b5a57d7a87fe2baf5ab1bc528245b81fad36408535cf55e9c4cada1ee4bb22cd
     validation_evidence:
-      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21-r2.md
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21-r4.md
       source_audit: evaluations/live-editor-audit-2026-09-21.md
-      installation: evaluations/parity/release-validation-2026-09-21.md
-      functional_evidence: evaluations/parity/local-results-2026-09-21-r2.md
+      installation: evaluations/parity/install-validation-2026-09-21-r4.md
+      functional_evidence: evaluations/parity/local-results-2026-09-21-r4.md
       release: evaluations/parity/release-validation-2026-09-21.md
   - id: ac.dp
     repository: ac-agente-dp
