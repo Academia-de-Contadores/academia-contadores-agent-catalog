@@ -67,7 +67,7 @@ agents:
     editor_url: https://chatgpt.com/gpts/editor/g-6a725a3feec081919ba9131c9f475341
     profile: canonical
     skill_version: 0.2.0
-    repository_commit: 2a2cf2e726911ab033fbf7c73c9c123fa275a18e
+    repository_commit: f7e1a15c890a050171474d3b27fd63fab7cda903
     instruction_path: instructions/system.md
     knowledge_path: knowledge/original
     actions_policy: none

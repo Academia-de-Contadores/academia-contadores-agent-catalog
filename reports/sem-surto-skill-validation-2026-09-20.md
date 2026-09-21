@@ -4,7 +4,7 @@
 
 O catálogo local registra `ac.reforma-tributaria-sem-surto` na versão `0.2.0`,
 com lifecycle `validated`, perfil `canonical` e commit-fonte
-`2a2cf2e726911ab033fbf7c73c9c123fa275a18e`.
+`f7e1a15c890a050171474d3b27fd63fab7cda903`.
 
 O GPT principal permanece
 `g-6a725a3feec081919ba9131c9f475341`. A comparação independente registra PASS
@@ -21,7 +21,7 @@ GPT online foi preservado como baseline, sem edição ou publicação nesta roda
 Os caminhos acima são relativos ao repositório
 `https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-sem-surto.git`.
 O commit validado pode ser conferido em
-`https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-sem-surto/commit/2a2cf2e726911ab033fbf7c73c9c123fa275a18e` após a publicação.
+`https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-sem-surto/commit/f7e1a15c890a050171474d3b27fd63fab7cda903` após a publicação.
 
 ## Integridade
 
@@ -63,6 +63,4 @@ resolvem exatamente para esses hashes antes de liberar a terceira família.
 A validação comportamental é qualitativa, com uma amostra por pergunta e
 contexto compartilhado; não demonstra resultados universais nem superioridade
 do pacote. O Knowledge é uma captura histórica, e vigência ou versão material
-continua exigindo consulta oficial. A documentação de uso ainda chama a skill
-de `candidate` em pontos do README/HOW-TO-USE; esse minor documental pertence à
-triagem final e não foi alterado nesta tarefa de catálogo.
+continua exigindo consulta oficial.

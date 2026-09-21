@@ -76,7 +76,7 @@ agents:
   - id: ac.reforma-tributaria-sem-surto
     repository: ac-agente-reforma-tributaria-sem-surto
     repository_url: https://github.com/Academia-de-Contadores/ac-agente-reforma-tributaria-sem-surto.git
-    repository_commit: 2a2cf2e726911ab033fbf7c73c9c123fa275a18e
+    repository_commit: f7e1a15c890a050171474d3b27fd63fab7cda903
     lifecycle: validated
     owner: Academia-de-Contadores
     production_version: 0.2.0
