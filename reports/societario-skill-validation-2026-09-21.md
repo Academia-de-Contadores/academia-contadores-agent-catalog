@@ -4,14 +4,16 @@
 
 O catálogo registra `ac.societario` na versão `0.2.0`, com lifecycle
 `validated`, perfis `canonical` e `public-safe`, skill `$ac-societario` e
-commit-fonte `cfc37188f405197615120de7f9007a39d5e75236`.
+commit-fonte `717a35d68f5553b18855485e6b0551d203a7483e`.
 
 O GPT principal permanece
 `g-6a725963258081919e7c1824531b1b6d`. A comparação funcional registra PASS
 local em 6/6 e PASS online em 6/6 casos. Na rubrica de 12 pontos, P1, P2, P3,
 P5 e P6 atingiram 12/12; P4 atingiu 11/12 e preservou os três gates
-obrigatórios. A revisão final independente terminou com 0 Critical, 0 Important
-e 0 Minor. O GPT online não foi alterado.
+obrigatórios. A revisão comportamental pós-fix terminou com 0 Critical,
+0 Important e 0 Minor. A auditoria final inicial da release encontrou um hash
+de inventário inconsistente; ele foi corrigido, sem antecipar o resultado da
+re-review final. O GPT online não foi alterado.
 
 ## Evidências
 
@@ -34,8 +36,12 @@ da branch usada na preparação.
   e zero `.gitkeep`.
 - Igualdade origem × instalação: PASS 22/22 por caminho e bytes.
 - SHA-256 reproduzível do inventário:
-  `b481886fdb5efa8180f4a45156128e31e4c5561688950832c139291f7b0349b1`.
+  `32b8a83a38475236ad1a415b9eb1e9e6a50caa815976d6d688e454f637eddbb1`.
 - `quick_validate.py`: PASS na origem e na instalação.
+
+O hash corrigido foi reproduzido diretamente na instalação e em pacote
+temporário reconstruído com a allowlist documentada de 22 arquivos. Este
+relatório registra a correção da auditoria inicial, não uma re-review final.
 
 ## Integridade do catálogo
 
