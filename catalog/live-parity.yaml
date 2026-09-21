@@ -36,9 +36,18 @@ agents:
   - agent_id: ac.estrategista-conteudo-dai
     repository: ac-agente-estrategista-conteudo-dai
     editor_url: https://chatgpt.com/gpts/editor/g-6a7259c849d4819194844f4d99c1213d
+    profile: canonical
+    skill_version: 0.2.0
+    repository_commit: f347629b9fde45129d38f494f47f17029b43bc35
     instruction_path: instructions/system.md
-    knowledge_path: knowledge/live-2026-08-22
+    knowledge_path: knowledge/active-2026-09-21
     actions_policy: none
+    validation_evidence:
+      functional_comparison: evaluations/parity/local-parity-evaluation-2026-09-21-r2.md
+      source_audit: evaluations/live-editor-audit-2026-09-21.md
+      installation: reports/validation-2026-09-21.md
+      functional_evidence: evaluations/parity/local-parity-evaluation-2026-09-21-r2.md
+      release: reports/validation-2026-09-21.md
   - agent_id: ac.fiscal
     repository: ac-agente-fiscal
     editor_url: https://chatgpt.com/gpts/editor/g-6a72595c828c8191aec02f7931d9c626
