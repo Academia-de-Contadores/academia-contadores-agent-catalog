@@ -93,6 +93,15 @@ agents:
   - agent_id: ac.societario
     repository: ac-agente-societario
     editor_url: https://chatgpt.com/gpts/editor/g-6a725963258081919e7c1824531b1b6d
+    profile: canonical
+    skill_version: 0.2.0
+    repository_commit: 717a35d68f5553b18855485e6b0551d203a7483e
     instruction_path: instructions/system.md
     knowledge_path: knowledge/live-2026-08-22
     actions_policy: none
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21.md
+      original_source_verification: evaluations/parity/original-source-verification-2026-09-21.md
+      installation: evaluations/parity/install-validation-2026-09-21.md
+      functional_evidence: evaluations/parity/local-results-2026-09-21.md
+      release: evaluations/parity/release-validation-2026-09-21.md

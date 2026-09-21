@@ -19,10 +19,26 @@ agents:
     profiles: [canonical, public-safe]
   - id: ac.societario
     repository: ac-agente-societario
-    lifecycle: source-capture
+    repository_url: https://github.com/Academia-de-Contadores/ac-agente-societario.git
+    repository_commit: 717a35d68f5553b18855485e6b0551d203a7483e
+    lifecycle: validated
     owner: Academia-de-Contadores
-    production_version: null
+    production_version: 0.2.0
     profiles: [canonical, public-safe]
+    primary_gpt_id: g-6a725963258081919e7c1824531b1b6d
+    skill_name: ac-societario
+    installed_path: /Users/levy/.codex/skills/ac-societario
+    installed_regular_files: 22
+    installed_knowledge_files: 10
+    installed_symlinks: 0
+    installed_gitkeep_files: 0
+    installed_inventory_sha256: 32b8a83a38475236ad1a415b9eb1e9e6a50caa815976d6d688e454f637eddbb1
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-21.md
+      original_source_verification: evaluations/parity/original-source-verification-2026-09-21.md
+      installation: evaluations/parity/install-validation-2026-09-21.md
+      functional_evidence: evaluations/parity/local-results-2026-09-21.md
+      release: evaluations/parity/release-validation-2026-09-21.md
   - id: ac.estrategista-conteudo-dai
     repository: ac-agente-estrategista-conteudo-dai
     lifecycle: source-capture
