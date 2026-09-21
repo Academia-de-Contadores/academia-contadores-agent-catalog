@@ -65,9 +65,17 @@ agents:
   - agent_id: ac.reforma-tributaria-sem-surto
     repository: ac-agente-reforma-tributaria-sem-surto
     editor_url: https://chatgpt.com/gpts/editor/g-6a725a3feec081919ba9131c9f475341
+    profile: canonical
+    skill_version: 0.2.0
+    repository_commit: f7e1a15c890a050171474d3b27fd63fab7cda903
     instruction_path: instructions/system.md
     knowledge_path: knowledge/original
     actions_policy: none
+    validation_evidence:
+      functional_comparison: evaluations/parity/gpt-comparison-2026-09-20.md
+      original_source_verification: evaluations/parity/original-source-verification-2026-09-20.md
+      installation: evaluations/parity/install-validation-2026-09-20.md
+      functional_evidence: evaluations/parity/local-results-2026-09-20.md
   - agent_id: ac.reforma-tributaria
     repository: ac-agente-reforma-tributaria
     editor_url: https://chatgpt.com/gpts/editor/g-6a7259cd04a48191a3bb1c2833b0ca2f
