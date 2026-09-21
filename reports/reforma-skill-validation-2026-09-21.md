@@ -5,7 +5,7 @@
 O catálogo local registra `ac.reforma-tributaria` na versão `0.2.0`, com
 lifecycle `validated`, perfis `current-closed`, `restored-technical` e
 `legacy-action` e commit-fonte
-`3bd551813eb142acc7f8ed7f5fd34768d35d37e0`.
+`7f8e48683c5168bee4b22c91f54c6e7ed9626232`.
 
 O GPT principal permanece
 `g-6a7259cd04a48191a3bb1c2833b0ca2f`. O perfil de paridade do GPT online é
@@ -31,6 +31,11 @@ esta atualização não faz push, PR ou merge.
 
 - A instalação local contém 53 arquivos regulares e coincide byte a byte com os
   mesmos caminhos da origem validada.
+- O inventário pós-review mantém 53/53 arquivos e tem SHA-256
+  `653c6ea8b23c4497b557059454c9b387e9b92b5672e6552f2b5a11e7bed857af`;
+  o README histórico do conector tem SHA-256
+  `11fe985e121209e2bb4442cf6c9a5eda2d762cb62e930db8bd7cfac1d572ef7a`
+  na origem e na instalação.
 - O manifesto da origem e da instalação registra `0.2.0`, lifecycle
   `validated` e os três perfis na mesma versão.
 - As outras 11 famílias permanecem estruturalmente idênticas à base
@@ -67,6 +72,8 @@ hash remoto.
 A validação comportamental usa sete casos e não certifica vigência normativa ou
 resultados universais. O perfil `legacy-action` não teve health/retrieval remoto
 bem-sucedido; quando a integração histórica não pode ser verificada, ele usa o
-fallback `restored-technical`. A referência histórica
-`evaluations/regression/connector-unavailable.md` permanece ausente e diferida
-para triagem final; ela não participa do runtime nem foi corrigida nesta task.
+fallback `restored-technical`. O minor final de rastreabilidade do conector foi
+resolvido: `connectors/rag/README.md` agora aponta para
+`evaluations/regression/C1.md` e `references/retrieval-contract.md`, distingue os
+dois schemas preservados e explicita que avaliações não são runtime. Não restam
+pendências da revisão final; push, pull request e merge continuam fora deste gate.
