@@ -88,9 +88,9 @@ agents:
     repository: ac-agente-reforma-tributaria-rag
     editor_url: https://chatgpt.com/gpts/editor/g-6a1b93a521b4819189fda957bcf00115
     profile: current
-    skill_version: 0.2.0
-    repository_commit: 49b03e619c15e339cfdae62d3b7113b92fb01867
-    instruction_path: instructions/current-live-2026-08-22.md
+    skill_version: 0.2.1
+    repository_commit: 88c57ab2cee3f26b3ec1042e48aaa901b4a615b4
+    instruction_path: instructions/current-live-2026-09-24.md
     knowledge_path: knowledge/live-2026-08-22
     actions_policy: required
     validation_evidence:
@@ -98,6 +98,8 @@ agents:
       original_source_verification: evaluations/parity/original-source-verification-2026-09-20.md
       installation: evaluations/parity/install-validation-2026-09-20.md
       functional_evidence: evaluations/parity/task-5-fix1-evidence-2026-09-20/README.md
+      regression_2027: evaluations/parity/cbs-2027-validation-2026-09-24.md
+      live_update: evaluations/live-editor-audit-2026-09-24.md
   - agent_id: ac.reforma-tributaria-sem-surto
     repository: ac-agente-reforma-tributaria-sem-surto
     editor_url: https://chatgpt.com/gpts/editor/g-6a725a3feec081919ba9131c9f475341
